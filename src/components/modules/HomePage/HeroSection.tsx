@@ -42,7 +42,7 @@ function HeroSection() {
   return (
     <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
       {/* Left-side social links */}
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="blue" />
+      {/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="blue" /> */}
 
       <div className="lg:flex items-center">
         <div className="flex gap-6 items-center lg:w-[40%]">
@@ -101,7 +101,7 @@ function HeroSection() {
             I'm ISHTIAK AHMED
           </h1>
 
-          <div className="text-2xl sm:text-lg md:text-xl font-bold text-left text-red-400 dark:text-blue-400 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
+          <div className="text-2xl sm:text-lg md:text-xl font-bold text-left text-teal-600 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
             <div
               className={clsx(
                 "transition-all duration-300 ease-in-out absolute w-full",
