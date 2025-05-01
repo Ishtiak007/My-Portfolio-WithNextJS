@@ -1,5 +1,4 @@
 /* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useState, JSX } from "react";
@@ -9,7 +8,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion"; // Fixed import
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 
 export const FloatingNav = ({
   navItems,
