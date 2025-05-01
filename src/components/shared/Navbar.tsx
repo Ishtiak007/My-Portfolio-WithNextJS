@@ -11,8 +11,8 @@ export function Navbar() {
       icon: <FaHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "About",
-      link: "/about",
+      name: "Blogs",
+      link: "/blogs",
       icon: <FaUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {

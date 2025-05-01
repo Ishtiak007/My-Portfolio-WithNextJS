@@ -186,17 +186,17 @@ export const DraggableCardContainer = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <>
-      <div className="my-5">
+    <div className="bg-gray-900">
+      <div>
         <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase text-center">
           20 + Complete Projects
         </h2>
         <p className="mt-2 text-3xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
-          Hover and have fun
+          Catch and have a look
         </p>
       </div>
 
       <div className={cn("[perspective:3000px]", className)}>{children}</div>
-    </>
+    </div>
   );
 };

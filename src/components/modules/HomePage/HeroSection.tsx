@@ -15,12 +15,14 @@ import {
   FaFacebook,
   FaInstagram,
   FaTwitter,
+  FaDownload,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const phrases = [
   "Full Stack Developer",
   "MERN Stack Developer",
-  "Problem Solver",
+  "Full Stack MERN Enthusiast",
 ];
 
 function HeroSection() {
@@ -126,15 +128,28 @@ function HeroSection() {
           <div className="mt-4 flex justify-start gap-4">
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
+              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
             >
-              Download Resume
+              <a
+                className="flex items-center gap-2"
+                href="Resume_of_Ishtiak-Ahmed.pdf"
+                download
+              >
+                <FaDownload></FaDownload> Download Resume
+              </a>
             </Button>
             <Button
               borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
+              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
             >
-              Let's Discuss
+              <a
+                href="https://wa.me/8801853196899"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 w-full h-full justify-center"
+              >
+                <FaWhatsapp size={18} /> Let's Discuss
+              </a>
             </Button>
           </div>
         </div>
