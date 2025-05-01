@@ -1,6 +1,7 @@
 import { AboutMe } from "@/components/modules/HomePage/AboutMe";
 import HeroSection from "@/components/modules/HomePage/HeroSection";
 import { CompleteProjectOverview } from "@/components/modules/HomePage/ProjectOverview";
+import Projects from "@/components/modules/Projects";
 import React from "react";
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutMe />
       <CompleteProjectOverview />
+      <Projects />
     </main>
   );
 };
