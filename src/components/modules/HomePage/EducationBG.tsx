@@ -1,21 +1,30 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 const EducationBG = () => {
   return (
     <div className="lg:p-7 bg-gray-900">
-      <div className="text-center mb-6">
-        <h3 className="text-xl font-semibold text-white">
-          Education Background
-        </h3>
+      <div className="text-center py-8">
+        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+          Here's my educational background details
+        </h2>
+        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          Educational Background
+        </p>
       </div>
 
       <div className="lg:flex gap-4 ">
         <div className="space-y-6 relative pl-5 border-l-2 border-gray-400 flex-1">
+          <div className="text-center mb-6">
+            <h3 className="text-xl font-semibold text-white">
+              Education Details
+            </h3>
+          </div>
           {/* Box 1 */}
           <div className="relative pl-5">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">Batch 2017</h4>
-            <h3 className="text-[19px] py-2 text-gray-300">
+            <h3 className="text-[19px] py-2 text-gray-400">
               Secondary School Degree (SSC)
             </h3>
             <p className="text-sm text-gray-400">
@@ -29,7 +38,7 @@ const EducationBG = () => {
           <div className="relative pl-5">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2017 - 2019</h4>
-            <h3 className="text-[19px] py-2 text-gray-300">
+            <h3 className="text-[19px] py-2 text-gray-400">
               Higher School Degree (HSC)
             </h3>
             <p className="text-sm text-gray-400">
@@ -43,7 +52,7 @@ const EducationBG = () => {
           <div className="relative pl-5 pb-0">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-            <h3 className="text-[19px] py-2 text-gray-300">
+            <h3 className="text-[19px] py-2 text-gray-400">
               Bachelor Of Science Degree
             </h3>
             <p className="text-sm text-gray-500">
@@ -55,7 +64,7 @@ const EducationBG = () => {
 
             {/* Notable Courses Section */}
             <div className="mt-4">
-              <h4 className="text-gray-300 font-semibold mb-2">
+              <h4 className="text-gray-400 font-semibold mb-2">
                 Notable Courses:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 text-sm text-gray-400">
@@ -102,7 +111,9 @@ const EducationBG = () => {
 
         <div className="space-y-6 relative pl-5 border-gray-400 flex-1">
           <div className="text-center mb-6">
-            <h3 className="text-xl font-semibold text-white">My Experience</h3>
+            <h3 className="text-xl font-semibold text-white">
+              Development Experience
+            </h3>
           </div>
 
           <div className="space-y-6 relative pl-5 border-l-2 border-gray-400">
@@ -110,14 +121,16 @@ const EducationBG = () => {
             <div className="relative pl-5">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-300">
-                Real Life Project
+              <h3 className="text-[19px] py-2 text-gray-400">
+                Real-Life Projects
               </h3>
               <p className="text-sm text-gray-400">
-                Creative thinker in MERN stack web development. I thrive on
-                crafting unique solutions, merging design and code seamlessly.
-                Committed to enhancing user experiences through innovative and
-                impactful web development.
+                Full Stack MERN developer skilled in building robust, scalable
+                web applications. I seamlessly integrate front-end design with
+                efficient back-end logic, ensuring responsive UI, secure APIs,
+                and dynamic user experiences. Passionate about delivering
+                impactful, real-world solutions through clean and maintainable
+                code.
               </p>
             </div>
 
@@ -125,17 +138,23 @@ const EducationBG = () => {
             <div className="relative pl-5">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-300">Frontend Side</h3>
+              <h3 className="text-[19px] py-2 text-gray-400">
+                Frontend Development
+              </h3>
               <p className="text-sm text-gray-400">
-                As a front-end web developer, I specialize in
-                <span className="text-green-300"> React JS</span>,
-                <span className="text-green-300"> Tailwind CSS</span>,
-                <span className="text-green-300"> DaisyUI</span>, (Sometime
-                <span className="text-green-300"> Bootstrap</span>), and
-                <span className="text-green-300"> Material UI</span> (Learning)
-                crafting clear and concise code. I am dedicated to creating
-                visually appealing and user-friendly interfaces, ensuring a
-                seamless and engaging web experience.
+                As a Full Stack MERN Developer, my front-end expertise lies in
+                <span className="text-green-400"> Typescript</span>,
+                <span className="text-green-400"> Javascript</span>,
+                <span className="text-green-400"> React JS</span>,
+                <span className="text-green-400"> Next JS</span>,
+                <span className="text-green-400"> Tailwind CSS</span>,
+                <span className="text-green-400">
+                  {" "}
+                  Shadcn UI, Aceternity UI
+                </span>
+                ,<span className="text-green-400"> Bootstrap</span>{" "}
+                (occasionally) I build responsive, clean, and interactive
+                interfaces focused on performance and excellent user experience.
               </p>
             </div>
 
@@ -143,15 +162,20 @@ const EducationBG = () => {
             <div className="relative pl-5 pb-0">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-300">Backend Side</h3>
+              <h3 className="text-[19px] py-2 text-gray-400">
+                Backend Development
+              </h3>
               <p className="text-sm text-gray-400">
-                Experienced backend developer adept in
-                <span className="text-green-300"> Node JS</span>,
-                <span className="text-green-300"> Express JS</span>,
-                <span className="text-green-300"> React JS</span>, and
-                <span className="text-green-300"> MongoDB</span>. Skillfully
-                architects robust solutions for seamless integration and dynamic
-                functionality.
+                As a Full Stack MERN Developer, I specialize in back-end
+                development using
+                <span className="text-green-400"> Typescript</span>,
+                <span className="text-green-400"> Node.js</span>,
+                <span className="text-green-400"> Express.js</span>,
+                <span className="text-green-400"> Mongoose</span>. I design and
+                implement RESTful APIs, integrate databases, and ensure smooth,
+                secure server-side functionality. I'm committed to creating
+                efficient, scalable systems that seamlessly connect the
+                front-end with the back-end.
               </p>
             </div>
           </div>
