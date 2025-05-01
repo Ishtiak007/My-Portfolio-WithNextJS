@@ -17,6 +17,7 @@ import {
   FaTwitter,
   FaDownload,
   FaWhatsapp,
+  FaPinterest,
 } from "react-icons/fa";
 
 const phrases = [
@@ -50,57 +51,6 @@ function HeroSection() {
       />
 
       <div className="lg:flex items-center">
-        <div className="flex gap-6 items-center lg:w-[40%]">
-          <div className="md:flex flex-col gap-4 ">
-            <Link
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaGithub />
-            </Link>
-            <Link
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link
-              href="mailto:you@example.com"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaEnvelope />
-            </Link>
-            <Link
-              href="mailto:you@example.com"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaFacebook />
-            </Link>
-            <Link
-              href="mailto:you@example.com"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              href="mailto:you@example.com"
-              className="text-white hover:text-blue-400 transition-colors text-2xl"
-            >
-              <FaTwitter />
-            </Link>
-          </div>
-          {/* banner image */}
-          <Image
-            src={bannerImage}
-            alt="Banner Image"
-            className="w-auto rounded-xl"
-          />
-        </div>
-
         <div className="p-4 relative z-10 text-left lg:w-[600]">
           <h1 className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             I'm ISHTIAK AHMED
@@ -151,6 +101,64 @@ function HeroSection() {
                 <FaWhatsapp size={18} /> Let's Discuss
               </a>
             </Button>
+          </div>
+        </div>
+
+        <div className="flex gap-6 items-center lg:w-[40%]">
+          {/* banner image */}
+          <Image
+            src={bannerImage}
+            alt="Banner Image"
+            className="w-auto rounded-xl"
+          />
+
+          <div className="md:flex flex-col gap-4 ">
+            <Link
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              href="mailto:you@example.com"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaEnvelope />
+            </Link>
+            <Link
+              href="mailto:you@example.com"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              href="mailto:you@example.com"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="mailto:you@example.com"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              href="mailto:you@example.com"
+              className="text-white hover:text-blue-400 transition-colors text-2xl"
+            >
+              <FaPinterest />
+            </Link>
           </div>
         </div>
       </div>
