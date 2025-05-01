@@ -21,13 +21,13 @@ const Projects = () => {
 
   return (
     <div className="bg-gray-900">
-      <div className="">
-        <p className="py-4 text-3xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center uppercase">
-          My Projects
-        </p>
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide  text-center my-6">
+      <div className="text-center py-8">
+        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
           Here are some projects with Forrentend and Fullstack.
         </h2>
+        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          My Projects
+        </p>
       </div>
       <div className="max-w-screen-xl mx-auto">
         {/* Tabs */}

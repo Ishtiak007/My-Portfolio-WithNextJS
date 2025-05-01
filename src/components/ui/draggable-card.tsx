@@ -187,11 +187,11 @@ export const DraggableCardContainer = ({
 }) => {
   return (
     <div className="bg-[#173447]">
-      <div>
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase text-center">
+      <div className="text-center py-8">
+        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
           20 + Complete Projects
         </h2>
-        <p className="mt-2 text-3xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
           Catch and have a look
         </p>
       </div>
