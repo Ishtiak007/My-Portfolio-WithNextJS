@@ -186,7 +186,7 @@ export const DraggableCardContainer = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-[#173447]">
       <div>
         <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase text-center">
           20 + Complete Projects

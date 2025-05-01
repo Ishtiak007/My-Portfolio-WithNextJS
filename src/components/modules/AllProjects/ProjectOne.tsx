@@ -64,7 +64,7 @@ const ProjectOne = () => {
   ];
   return (
     <div className="w-full max-w-3xl mx-auto mt-10 px-4">
-      <div className="overflow-hidden rounded-xl shadow-lg bg-gray-900">
+      <div className="overflow-hidden rounded-xl shadow-lg bg-[#173447]">
         {/* Image container */}
         <div className="w-full h-60 sm:h-64 md:h-72 lg:h-80 overflow-hidden group">
           <Image

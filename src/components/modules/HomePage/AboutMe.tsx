@@ -30,7 +30,7 @@ export function AboutMe() {
   ];
   return (
     <>
-      <div className="py-12 bg-gray-900">
+      <div className="py-12 bg-[#173447]">
         <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase text-center">
           About Me
         </h2>
