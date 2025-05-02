@@ -36,14 +36,12 @@ function SkillsIcons() {
         </p>
       </div>
       <div className="px-4 py-10">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 max-w-screen-xl mx-auto">
-          {/* Frontend */}
-          <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Frontend
-            </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 ">
-              {[
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto">
+          {/* Section Template */}
+          {[
+            {
+              title: "Frontend",
+              items: [
                 { src: html, label: "HTML-5" },
                 { src: css, label: "CSS-3" },
                 { src: bootstrap, label: "Bootstrap" },
@@ -52,57 +50,21 @@ function SkillsIcons() {
                 { src: typescript, label: "Typescript" },
                 { src: react, label: "React" },
                 { src: nextJs, label: "NextJS" },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
-                >
-                  <Image
-                    src={item.src}
-                    alt={item.label}
-                    className="w-10 h-10 "
-                  />
-                  <p className="text-white mt-2 text-sm ">{item.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Backend */}
-          <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Backend
-            </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {[
+              ],
+            },
+            {
+              title: "Backend",
+              items: [
                 { src: typescript, label: "Typescript" },
                 { src: nodejs, label: "NodeJS" },
                 { src: expressjs, label: "Express" },
                 { src: jwt, label: "JWT" },
                 { src: cloudinary, label: "Cloudinary" },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
-                >
-                  <Image
-                    src={item.src}
-                    alt={item.label}
-                    className="w-10 h-10"
-                  />
-                  <p className="text-white mt-2 text-sm">{item.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Tools */}
-          <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Tools
-            </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {[
+              ],
+            },
+            {
+              title: "Tools",
+              items: [
                 {
                   icon: <FaGithub className="w-10 h-10 text-white" />,
                   label: "GitHub",
@@ -112,60 +74,50 @@ function SkillsIcons() {
                 { src: vscode, label: "VS Code" },
                 { src: figma, label: "Figma" },
                 { src: devtools, label: "Dev Tools" },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
-                >
-                  {item.icon ? (
-                    item.icon
-                  ) : (
-                    <Image
-                      src={item.src}
-                      alt={item.label}
-                      className={`w-10 h-10 ${
-                        item.bgWhite ? "bg-white p-1 rounded-md" : ""
-                      }`}
-                    />
-                  )}
-                  <p className="text-white mt-2 text-sm">{item.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Database */}
-          <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Database
-            </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {[
+              ],
+            },
+            {
+              title: "Database",
+              items: [
                 {
                   icon: <FaDatabase className="w-10 h-10 text-white" />,
                   label: "Local Storage",
                 },
                 { src: mongoDb, label: "MongoDB" },
                 { src: mongoose, label: "Mongoose" },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
-                >
-                  {item.icon ? (
-                    item.icon
-                  ) : (
-                    <Image
-                      src={item.src}
-                      alt={item.label}
-                      className="w-10 h-10"
-                    />
-                  )}
-                  <p className="text-white mt-2 text-sm">{item.label}</p>
-                </div>
-              ))}
+              ],
+            },
+          ].map((section, idx) => (
+            <div
+              key={idx}
+              className="bg-gray-900 rounded-xl shadow-2xl p-4 sm:p-5"
+            >
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-pink-400 text-center mb-6 text-xl sm:text-2xl font-bold">
+                {section.title}
+              </h1>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                {section.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
+                  >
+                    {item.icon ? (
+                      item.icon
+                    ) : (
+                      <Image
+                        src={item.src}
+                        alt={item.label}
+                        className={`w-10 h-10 bg-gray-300 p-1 rounded-md`}
+                      />
+                    )}
+                    <p className="text-white mt-2 text-sm text-center">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
