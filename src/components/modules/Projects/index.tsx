@@ -9,6 +9,7 @@ import AlemenoAcademy from "../AllProjects/AlemenoAcademy";
 import StationeryShop from "../AllProjects/StationeryShop";
 import ShebaDashboard from "../AllProjects/ShebaDashboard";
 import ShreyuDashboard from "../AllProjects/ShreyuDashboard";
+import LibraryManagement from "../AllProjects/LibraryManagement";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -27,6 +28,7 @@ const Projects = () => {
   const frontEndProjects = [
     <ShebaDashboard key={7} />,
     <ShreyuDashboard key={8} />,
+    <LibraryManagement key={9} />,
   ];
 
   const currentProjects =
