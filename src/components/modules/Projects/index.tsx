@@ -10,6 +10,7 @@ import StationeryShop from "../AllProjects/StationeryShop";
 import ShebaDashboard from "../AllProjects/ShebaDashboard";
 import ShreyuDashboard from "../AllProjects/ShreyuDashboard";
 import LibraryManagement from "../AllProjects/LibraryManagement";
+import TaskManagement from "../AllProjects/TaskManagement";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -29,6 +30,7 @@ const Projects = () => {
     <ShebaDashboard key={7} />,
     <ShreyuDashboard key={8} />,
     <LibraryManagement key={9} />,
+    <TaskManagement key={10} />,
   ];
 
   const currentProjects =
