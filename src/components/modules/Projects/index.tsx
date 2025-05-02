@@ -1,20 +1,23 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectOne from "../AllProjects/ProjectOne";
+import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
 
   const fullStackProjects = [
-    <ProjectOne key={1} />,
-    <ProjectOne key={2} />,
-    <ProjectOne key={3} />,
-    <ProjectOne key={5} />,
-    <ProjectOne key={6} />,
-    <ProjectOne key={7} />,
+    <SecondHandMarketPlace key={1} />,
+    <SecondHandMarketPlace key={2} />,
+    <SecondHandMarketPlace key={3} />,
+    <SecondHandMarketPlace key={5} />,
+    <SecondHandMarketPlace key={6} />,
+    <SecondHandMarketPlace key={7} />,
   ];
-  const frontEndProjects = [<ProjectOne key={4} />, <ProjectOne key={5} />];
+  const frontEndProjects = [
+    <SecondHandMarketPlace key={4} />,
+    <SecondHandMarketPlace key={5} />,
+  ];
 
   const currentProjects =
     activeTab === "fullstack" ? fullStackProjects : frontEndProjects;

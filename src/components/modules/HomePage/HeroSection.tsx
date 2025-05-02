@@ -57,7 +57,7 @@ function HeroSection() {
             I'm ISHTIAK AHMED
           </h1>
 
-          <div className="text-xl sm:text-lg md:text-xl font-bold text-left text-teal-500 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
+          <div className="text-xl sm:text-lg md:text-xl font-bold text-left text-teal-400 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
             <div
               className={clsx(
                 "transition-all duration-300 ease-in-out absolute w-full",
@@ -135,7 +135,7 @@ function HeroSection() {
               href="https://github.com/Ishtiak007"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float"
             >
               <FaGithub />
             </Link>
@@ -143,42 +143,42 @@ function HeroSection() {
               href="https://www.linkedin.com/in/ishtiak-ahmed-2846722a5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-100"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-100"
             >
               <FaLinkedin />
             </Link>
             <Link
               href="mailto:ishtiakahmed18899@gmail.com"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-200"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-200"
             >
               <FaEnvelope />
             </Link>
             <Link
               href="https://www.facebook.com/ishtiakahmed01999"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-300"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-300"
             >
               <FaFacebook />
             </Link>
             <Link
               href="https://www.instagram.com/ishtiak_ahmed99/"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-400"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-400"
             >
               <FaInstagram />
             </Link>
             <Link
               href="https://x.com/Ishtiak02236404"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-500"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-500"
             >
               <FaTwitter />
             </Link>
             <Link
               href="https://www.pinterest.com/ishtiakahmed18899/"
               target="_blank"
-              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-600"
+              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-600"
             >
               <FaPinterest />
             </Link>
