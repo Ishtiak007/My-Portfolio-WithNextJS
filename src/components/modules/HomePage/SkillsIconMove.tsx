@@ -125,84 +125,176 @@ function SkillsIcons() {
       <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-6xl">
           <Marquee>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={html} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={css} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={bootstrap} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={tailwind} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={javascript} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={react} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={nodejs} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={expressjs} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={firebase} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={jwt} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={nodejs} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={expressjs} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={firebase} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={jwt} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={react} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
-              <FaGithub className="w-12 h-12" />
-            </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={netlify} alt="Skill Icon" />
-            </div>
-            <div className="mx-3">
+            <div className="mx-3 my-6">
               <Image
-                className="w-12 h-12 bg-white rounded-md"
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={html}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={css}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={bootstrap}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={tailwind}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={javascript}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={react}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={nodejs}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={expressjs}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={firebase}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={jwt}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={nodejs}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={expressjs}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={firebase}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={jwt}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={react}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <FaGithub className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md" />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={netlify}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md bg-white rounded-md"
                 src={vercel}
                 alt="Skill Icon"
               />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={vscode} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={vscode}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={figma} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={figma}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={devtools} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={devtools}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={mongoose} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={mongoose}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={typescript} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={typescript}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={nextJs} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={nextJs}
+                alt="Skill Icon"
+              />
             </div>
-            <div className="mx-3">
-              <Image className="w-12 h-12" src={cloudinary} alt="Skill Icon" />
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={cloudinary}
+                alt="Skill Icon"
+              />
             </div>
           </Marquee>
         </div>
