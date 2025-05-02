@@ -108,7 +108,7 @@ function HeroSection() {
             {/* discuss */}
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-40 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
+              className="bg-white h-10 w-40 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer "
             >
               <a
                 href="https://wa.me/8801853196899"
@@ -130,12 +130,12 @@ function HeroSection() {
             className="w-auto rounded-xl"
           />
 
-          <div className="md:flex flex-col gap-4 ">
+          <div className="md:flex flex-col gap-4">
             <Link
               href="https://github.com/Ishtiak007"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float"
             >
               <FaGithub />
             </Link>
@@ -143,42 +143,42 @@ function HeroSection() {
               href="https://www.linkedin.com/in/ishtiak-ahmed-2846722a5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-100"
             >
               <FaLinkedin />
             </Link>
             <Link
-              target="_blank"
               href="mailto:ishtiakahmed18899@gmail.com"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              target="_blank"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-200"
             >
               <FaEnvelope />
             </Link>
             <Link
-              target="_blank"
               href="https://www.facebook.com/ishtiakahmed01999"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              target="_blank"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-300"
             >
               <FaFacebook />
             </Link>
             <Link
-              target="_blank"
               href="https://www.instagram.com/ishtiak_ahmed99/"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              target="_blank"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-400"
             >
               <FaInstagram />
             </Link>
             <Link
-              target="_blank"
               href="https://x.com/Ishtiak02236404"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              target="_blank"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-500"
             >
               <FaTwitter />
             </Link>
             <Link
-              target="_blank"
               href="https://www.pinterest.com/ishtiakahmed18899/"
-              className="text-white hover:text-blue-500 transition-colors text-2xl"
+              target="_blank"
+              className="text-white hover:text-blue-500 transition-colors text-2xl animate-float delay-600"
             >
               <FaPinterest />
             </Link>

@@ -54,6 +54,7 @@ const config: Config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        float: "float 3s ease-in-out infinite", // 👈 added
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -70,9 +71,15 @@ const config: Config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        float: {
+          // 👈 added
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
     },
   },
   plugins: [addVariablesForColors, addSvgPatterns],
 };
+
 export default config;

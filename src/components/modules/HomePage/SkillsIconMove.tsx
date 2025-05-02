@@ -42,7 +42,7 @@ function SkillsIcons() {
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
               Frontend Side
             </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 ">
               {[
                 { src: html, label: "HTML-5" },
                 { src: css, label: "CSS-3" },
@@ -55,14 +55,14 @@ function SkillsIcons() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300"
+                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
                 >
                   <Image
                     src={item.src}
                     alt={item.label}
-                    className="w-10 h-10"
+                    className="w-10 h-10 "
                   />
-                  <p className="text-white mt-2 text-sm">{item.label}</p>
+                  <p className="text-white mt-2 text-sm ">{item.label}</p>
                 </div>
               ))}
             </div>
@@ -83,7 +83,7 @@ function SkillsIcons() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300"
+                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
                 >
                   <Image
                     src={item.src}
@@ -115,7 +115,7 @@ function SkillsIcons() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300"
+                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
                 >
                   {item.icon ? (
                     item.icon
@@ -150,7 +150,7 @@ function SkillsIcons() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300"
+                  className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
                 >
                   {item.icon ? (
                     item.icon
