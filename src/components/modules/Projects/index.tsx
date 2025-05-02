@@ -5,6 +5,7 @@ import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
 import FoodFestival from "../AllProjects/FoodFestival";
 import OldenGoods from "../AllProjects/OldenGoods";
 import PetAdoption from "../AllProjects/PetAdoption";
+import AlemenoAcademy from "../AllProjects/AlemenoAcademy";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -15,7 +16,7 @@ const Projects = () => {
     <FoodFestival key={2} />,
     <OldenGoods key={3} />,
     <PetAdoption key={4} />,
-    <SecondHandMarketPlace key={5} />,
+    <AlemenoAcademy key={5} />,
     <SecondHandMarketPlace key={6} />,
   ];
 
