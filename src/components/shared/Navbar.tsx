@@ -11,6 +11,11 @@ export function Navbar() {
       icon: <FaHome className="h-4 w-4 text-white" />,
     },
     {
+      name: "PROJECTS",
+      link: "/projects",
+      icon: <FaUser className="h-4 w-4 text-white" />,
+    },
+    {
       name: "BLOGS",
       link: "/blogs",
       icon: <FaUser className="h-4 w-4 text-white" />,

@@ -13,7 +13,7 @@ const GithubContribution = () => {
                 My GitHub Activities
             </h1>
 
-            <div className="bg-white dark:bg-gray-800 dark:text-white w-full max-w-6xl mx-auto p-6 md:p-10 rounded-3xl shadow-lg">
+            <div className="bg-white dark:bg-gray-900 dark:text-white w-full max-w-6xl mx-auto p-6 md:p-10 rounded-3xl shadow-lg">
                 <div className="flex justify-center items-center">
                     <GitHubCalendar
                         username="Ishtiak007"
@@ -23,17 +23,6 @@ const GithubContribution = () => {
                         fontSize={16}
                     />
                 </div>
-            </div>
-
-            <div className="flex justify-center items-center my-8">
-                <Image
-                    width={500}
-                    height={200}
-                    src={imgSrc}
-                    alt="GitHub Streak"
-                    onError={() => setImgSrc("/fallback.png")} // 👈 Use your local fallback
-                    className="w-full max-w-md rounded-lg shadow-lg"
-                />
             </div>
         </div>
     );

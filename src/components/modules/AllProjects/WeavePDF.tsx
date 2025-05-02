@@ -84,7 +84,7 @@ const WeavePDF = () => {
         {/* Content */}
         <div className="p-4">
           <h2 className="text-base sm:text-xl md:text-xl font-medium mb-2 text-white">
-            WeavePDF
+            WeavePDF (Team Project)
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-[13px] sm:text-base mb-4">
             WeavePDF: Empowering productivity with streamlined PDF management,

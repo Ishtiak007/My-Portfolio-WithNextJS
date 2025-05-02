@@ -23,7 +23,7 @@ const Projects = () => {
     <OldenGoods key={3} />,
     <StationeryShop key={4} />,
     <PetAdoption key={5} />,
-    <AlemenoAcademy key={6} />,
+    <WeavePDF key={6} />,
   ];
 
   // Frontend projects
@@ -32,7 +32,7 @@ const Projects = () => {
     <ShreyuDashboard key={8} />,
     <LibraryManagement key={9} />,
     <TaskManagement key={10} />,
-    <WeavePDF key={11} />,
+    <AlemenoAcademy key={11} />,
   ];
 
   const currentProjects =
