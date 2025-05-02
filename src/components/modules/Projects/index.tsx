@@ -2,13 +2,14 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
+import FoodFestival from "../AllProjects/FoodFestival";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
 
   const fullStackProjects = [
     <SecondHandMarketPlace key={1} />,
-    <SecondHandMarketPlace key={2} />,
+    <FoodFestival key={2} />,
     <SecondHandMarketPlace key={3} />,
     <SecondHandMarketPlace key={5} />,
     <SecondHandMarketPlace key={6} />,
