@@ -11,6 +11,7 @@ import ShebaDashboard from "../AllProjects/ShebaDashboard";
 import ShreyuDashboard from "../AllProjects/ShreyuDashboard";
 import LibraryManagement from "../AllProjects/LibraryManagement";
 import TaskManagement from "../AllProjects/TaskManagement";
+import WeavePDF from "../AllProjects/WeavePDF";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -31,6 +32,7 @@ const Projects = () => {
     <ShreyuDashboard key={8} />,
     <LibraryManagement key={9} />,
     <TaskManagement key={10} />,
+    <WeavePDF key={11} />,
   ];
 
   const currentProjects =
