@@ -1,5 +1,5 @@
 "use client";
-import { FaDatabase, FaGithub } from "react-icons/fa";
+import { FaDatabase, FaGithub, FaNpm } from "react-icons/fa";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -22,7 +22,9 @@ import vscode from "../../../../public/assets/icons/vscode.png";
 import mongoose from "../../../../public/assets/icons/mongoose.svg";
 import typescript from "../../../../public/assets/icons/typescript.svg";
 import nextJs from "../../../../public/assets/icons/nextjs.svg";
+import redux from "../../../../public/assets/icons/redux.svg";
 import cloudinary from "../../../../public/assets/icons/cloudinary.svg";
+import github from "../../../../public/assets/icons/github.svg";
 
 function SkillsIcons() {
   return (
@@ -50,12 +52,14 @@ function SkillsIcons() {
                 { src: typescript, label: "Typescript" },
                 { src: react, label: "React" },
                 { src: nextJs, label: "NextJS" },
+                { src: redux, label: "Redux" },
               ],
             },
             {
               title: "Backend",
               items: [
                 { src: typescript, label: "Typescript" },
+                { src: mongoose, label: "Mongoose" },
                 { src: nodejs, label: "NodeJS" },
                 { src: expressjs, label: "Express" },
                 { src: jwt, label: "JWT" },
@@ -66,9 +70,10 @@ function SkillsIcons() {
               title: "Tools",
               items: [
                 {
-                  icon: <FaGithub className="w-10 h-10 text-white" />,
-                  label: "GitHub",
+                  icon: <FaNpm className="w-10 h-10 text-red-400" />,
+                  label: "npm",
                 },
+                { src: github, label: "Github" },
                 { src: netlify, label: "Netlify" },
                 { src: vercel, label: "Vercel", bgWhite: true },
                 { src: vscode, label: "VS Code" },
@@ -84,7 +89,6 @@ function SkillsIcons() {
                   label: "Local Storage",
                 },
                 { src: mongoDb, label: "MongoDB" },
-                { src: mongoose, label: "Mongoose" },
               ],
             },
           ].map((section, idx) => (
@@ -286,6 +290,13 @@ function SkillsIcons() {
               <Image
                 className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
                 src={nextJs}
+                alt="Skill Icon"
+              />
+            </div>
+            <div className="mx-3 my-6">
+              <Image
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md"
+                src={redux}
                 alt="Skill Icon"
               />
             </div>

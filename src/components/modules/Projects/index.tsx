@@ -6,6 +6,7 @@ import FoodFestival from "../AllProjects/FoodFestival";
 import OldenGoods from "../AllProjects/OldenGoods";
 import PetAdoption from "../AllProjects/PetAdoption";
 import AlemenoAcademy from "../AllProjects/AlemenoAcademy";
+import StationeryShop from "../AllProjects/StationeryShop";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -15,16 +16,13 @@ const Projects = () => {
     <SecondHandMarketPlace key={1} />,
     <FoodFestival key={2} />,
     <OldenGoods key={3} />,
-    <PetAdoption key={4} />,
-    <AlemenoAcademy key={5} />,
-    <SecondHandMarketPlace key={6} />,
+    <StationeryShop key={4} />,
+    <PetAdoption key={5} />,
+    <AlemenoAcademy key={6} />,
   ];
 
   // Frontend projects
-  const frontEndProjects = [
-    <SecondHandMarketPlace key={7} />,
-    <SecondHandMarketPlace key={8} />,
-  ];
+  const frontEndProjects = [""];
 
   const currentProjects =
     activeTab === "fullstack" ? fullStackProjects : frontEndProjects;

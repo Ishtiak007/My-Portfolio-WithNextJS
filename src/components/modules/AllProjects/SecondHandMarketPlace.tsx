@@ -1,11 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import {
-  FaExternalLinkAlt,
-  FaGithub,
-  FaLink,
-  FaStreetView,
-} from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import ProjectCardImage from "../../../../public/assets/SecondHandMarketPlace/HomePage.png";
 
@@ -36,6 +31,7 @@ import vscode from "../../../../public/assets/icons/vscode.png";
 import mongoose from "../../../../public/assets/icons/mongoose.svg";
 import typescript from "../../../../public/assets/icons/typescript.svg";
 import nextJs from "../../../../public/assets/icons/nextjs.svg";
+import redux from "../../../../public/assets/icons/redux.svg";
 import cloudinary from "../../../../public/assets/icons/cloudinary.svg";
 import daisyUi from "../../../../public/assets/icons/daisyUI.png";
 
@@ -226,6 +222,7 @@ const SecondHandMarketPlace = () => {
                     { icon: css, label: "CSS" },
                     { icon: javascript, label: "JavaScript" },
                     { icon: typescript, label: "Typescript" },
+                    { icon: redux, label: "Redux" },
                     { icon: nextJs, label: "NextJs" },
                     { icon: tailwind, label: "Tailwind CSS" },
                   ].map((tech, idx) => (
@@ -256,6 +253,7 @@ const SecondHandMarketPlace = () => {
                     { icon: expressjs, label: "ExpressJS" },
                     { icon: mongoose, label: "Mongoose" },
                     { icon: mongoDb, label: "MongoDB" },
+                    { icon: jwt, label: "JWT" },
                     { icon: cloudinary, label: "Cloudinary" },
                   ].map((tech, idx) => (
                     <div
