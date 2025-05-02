@@ -242,7 +242,7 @@ function SkillsIcons() {
             </div>
             <div className="mx-3 my-6">
               <Image
-                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md bg-white rounded-md"
+                className="w-12 h-12 animate-float bg-white/[0.3] p-1 rounded-md bg-white"
                 src={vercel}
                 alt="Skill Icon"
               />

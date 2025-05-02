@@ -4,21 +4,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
 import FoodFestival from "../AllProjects/FoodFestival";
 import OldenGoods from "../AllProjects/OldenGoods";
+import PetAdoption from "../AllProjects/PetAdoption";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
 
+  // Full stack projects
   const fullStackProjects = [
     <SecondHandMarketPlace key={1} />,
     <FoodFestival key={2} />,
     <OldenGoods key={3} />,
+    <PetAdoption key={4} />,
     <SecondHandMarketPlace key={5} />,
     <SecondHandMarketPlace key={6} />,
-    <SecondHandMarketPlace key={7} />,
   ];
+
+  // Frontend projects
   const frontEndProjects = [
-    <SecondHandMarketPlace key={4} />,
-    <SecondHandMarketPlace key={5} />,
+    <SecondHandMarketPlace key={7} />,
+    <SecondHandMarketPlace key={8} />,
   ];
 
   const currentProjects =
