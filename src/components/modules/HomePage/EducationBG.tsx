@@ -24,85 +24,87 @@ const EducationBG = () => {
           <div className="relative pl-5">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">Batch 2017</h4>
-            <h3 className="text-[19px] py-2 text-gray-400">
+            <h3 className="text-[20px] py-2 text-gray-300">
               Secondary School Degree (SSC)
             </h3>
-            <p className="text-sm text-gray-400">
+            <p className="text-[15px] text-gray-300">
               School: Kurigram Collectorate School and College, Kurigram
             </p>
-            <p className="text-sm text-gray-400">SSC: 5.00 (A+)</p>
-            <p className="text-sm text-gray-400">Passing Year: 2017</p>
+            <p className="text-[15px] text-gray-300">SSC: 5.00 (A+)</p>
+            <p className="text-[15px] text-gray-300">Passing Year: 2017</p>
+            <p className="text-[15px] text-gray-300">Background : Science</p>
           </div>
 
           {/* Box 2 */}
           <div className="relative pl-5">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2017 - 2019</h4>
-            <h3 className="text-[19px] py-2 text-gray-400">
+            <h3 className="text-[20px] py-2 text-gray-300">
               Higher School Degree (HSC)
             </h3>
-            <p className="text-sm text-gray-400">
+            <p className="text-[15px] text-gray-300">
               College: Rangpur Collectorate School and College, Rangpur
             </p>
-            <p className="text-sm text-gray-400">HSC: 5.00 (A+)</p>
-            <p className="text-sm text-gray-400">Passing Year: 2019</p>
+            <p className="text-[15px] text-gray-300">HSC: 5.00 (A+)</p>
+            <p className="text-[15px] text-gray-300">Passing Year: 2019</p>
+            <p className="text-[15px] text-gray-300">Background : Science</p>
           </div>
 
           {/* Box 3 */}
           <div className="relative pl-5 pb-0">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-            <h3 className="text-[19px] py-2 text-gray-400">
+            <h3 className="text-[20px] py-2 text-gray-300">
               Bachelor Of Science Degree
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-[15px] text-gray-300">
               Department: Computer Science And Engineering (CSE)
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-[15px] text-gray-300">
               Rangpur Engineering College, Affiliated by University of Rajshahi
             </p>
 
             {/* Notable Courses Section */}
             <div className="mt-4">
-              <h4 className="text-gray-400 font-semibold mb-2">
+              <h4 className="text-gray-300 text-[20px] mb-2">
                 Notable Courses:
               </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 text-sm text-gray-400">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 text-[14px] text-gray-300">
                 <ul className="space-y-1">
-                  <li>CSE1111: Introduction to Computer Systems </li>
+                  <li>CSE1111- Introduction to Computer Systems </li>
                   <li>
-                    CSE1112: Computer Maintenance and Engineering Drawing Lab{" "}
+                    CSE1112- Computer Maintenance and Engineering Drawing Lab{" "}
                   </li>
-                  <li>CSE1121: Structural Programming Language </li>
-                  <li>CSE1122: Structural Programming Language Lab.</li>
-                  <li>PHY 1211: Basic Electricity and Electrical Circuits </li>
-                  <li>CSE 1211: Introduction to Digital Electronics</li>
-                  <li>CSE 1221: Object Oriented Programming </li>
-                  <li>CSE 1222: Object Oriented Programming Lab </li>
-                  <li>STAT 2111: Theory of Statistics </li>
-                  <li>MATH 2131: Differential Equations and Optimization</li>
-                  <li>CSE 2111: Digital System Design</li>
-                  <li>CSE 2121: Data Structure </li>
-                  <li>CSE 2131: Discrete Mathematics </li>
-                  <li>CSE2142: Writing Professional Code Lab </li>
+                  <li>CSE1121- Structural Programming Language </li>
+                  <li>CSE1122- Structural Programming Language Lab.</li>
+                  <li>PHY1211- Basic Electricity and Electrical Circuits </li>
+                  <li>CSE1211- Introduction to Digital Electronics</li>
+                  <li>CSE1221- Object Oriented Programming </li>
+                  <li>CSE1222- Object Oriented Programming Lab </li>
+                  <li>STAT2111- Theory of Statistics </li>
+                  <li>MATH2131- Differential Equations and Optimization</li>
+                  <li>CSE2111- Digital System Design</li>
+                  <li>CSE2121- Data Structure </li>
+                  <li>CSE2131- Discrete Mathematics </li>
+                  <li>CSE2142- Writing Professional Code Lab </li>
                 </ul>
                 <ul className="space-y-1">
-                  <li>LAW 2211: Cyber and Intellectual Property Law </li>
-                  <li>MATH 2231: Numerical Methods </li>
-                  <li>MATH 2241: Linear Algebra </li>
-                  <li>CSE 2211 - Theory of Computation</li>
-                  <li>CSE2221 - Design and Analysis of Algorithms</li>
-                  <li>CSE 2231 - Computer Architecture and Organization </li>
-                  <li>ICE 3161 - Communication Engineering</li>
-                  <li>CSE 3162 - Mobile Application Development</li>
+                  <li>LAW2211- Cyber and Intellectual Property Law </li>
+                  <li>MATH2231- Numerical Methods </li>
+                  <li>MATH2241- Linear Algebra </li>
+                  <li>CSE2211- Theory of Computation</li>
+                  <li>CSE2221- Design and Analysis of Algorithms</li>
+                  <li>CSE2231- Computer Architecture and Organization </li>
+                  <li>ICE3161- Communication Engineering</li>
+                  <li>CSE3162- Mobile Application Development</li>
                   <li>
-                    CSE 3151 - Engineering Ethics and Environment Protection{" "}
+                    CSE3151- Engineering Ethics and Environment Protection{" "}
                   </li>
-                  <li>CSE 3141 - Compiler Design</li>
-                  <li>CSE 3111 - Software Engineering</li>
-                  <li>CSE 3121 - Database Management Systems </li>
-                  <li>CSE 3131 - Web Engineering</li>
-                  <li>CSE 2252 - Web Application Development Lab </li>
+                  <li>CSE3141- Compiler Design</li>
+                  <li>CSE3111- Software Engineering</li>
+                  <li>CSE3121- Database Management Systems </li>
+                  <li>CSE3131- Web Engineering</li>
+                  <li>CSE2252- Web Application Development Lab </li>
                 </ul>
               </div>
             </div>
@@ -121,10 +123,10 @@ const EducationBG = () => {
             <div className="relative pl-5">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-400">
+              <h3 className="text-[20px] py-2 text-gray-300">
                 Real-Life Projects
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-[15px] text-gray-300">
                 Full Stack MERN developer skilled in building robust, scalable
                 web applications. I seamlessly integrate front-end design with
                 efficient back-end logic, ensuring responsive UI, secure APIs,
@@ -138,10 +140,10 @@ const EducationBG = () => {
             <div className="relative pl-5">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-400">
+              <h3 className="text-[20px] py-2 text-gray-300">
                 Frontend Development
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-[15px] text-gray-300">
                 As a Full Stack MERN Developer, my front-end expertise lies in
                 <span className="text-green-400"> Typescript</span>,
                 <span className="text-green-400"> Javascript</span>,
@@ -162,10 +164,10 @@ const EducationBG = () => {
             <div className="relative pl-5 pb-0">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
-              <h3 className="text-[19px] py-2 text-gray-400">
+              <h3 className="text-[20px] py-2 text-gray-300">
                 Backend Development
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-[15px] text-gray-300">
                 As a Full Stack MERN Developer, I specialize in back-end
                 development using
                 <span className="text-green-400"> Typescript</span>,

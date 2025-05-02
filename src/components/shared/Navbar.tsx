@@ -6,19 +6,19 @@ import { FloatingNav } from "../ui/floating-navbar";
 export function Navbar() {
   const navItems = [
     {
-      name: "Home",
+      name: "HOME",
       link: "/",
-      icon: <FaHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <FaHome className="h-4 w-4 text-white" />,
     },
     {
-      name: "Blogs",
+      name: "BLOGS",
       link: "/blogs",
-      icon: <FaUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <FaUser className="h-4 w-4 text-white" />,
     },
     {
-      name: "Contact",
+      name: "CONTACT",
       link: "/contact",
-      icon: <FaMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <FaMessage className="h-4 w-4 text-white" />,
     },
   ];
   return (

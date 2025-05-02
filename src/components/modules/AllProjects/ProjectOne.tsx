@@ -85,54 +85,47 @@ const ProjectOne = () => {
           </p>
 
           {/* links */}
-          <div className=" my-4">
-            <div>
-              <div className="flex justify-between ">
-                <button
-                  onClick={() =>
-                    (
-                      document.getElementById(
-                        "my_modal_projectOne"
-                      ) as HTMLDialogElement
-                    )?.showModal()
-                  }
-                  className="px-4 py-2 rounded-xl bg-gray-800 w-[140px] justify-center text-sm font-bold flex items-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-                >
-                  Details <CgDetailsMore />
-                </button>
-                <button>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-xl bg-gray-800 w-[140px] justify-center text-sm font-bold flex items-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-                    href="https://curious-dragon-bfb4a4.netlify.app/"
-                  >
-                    Live Link <FaLink></FaLink>
-                  </a>
-                </button>
-              </div>
-              <div className="flex justify-between my-3">
-                <button>
-                  <a
-                    className="px-4 py-2 rounded-xl bg-gray-800 w-[140px] justify-center text-sm font-bold flex items-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/Md-Rakib-Hassan/WeavePDF"
-                  >
-                    Client <FaGithub></FaGithub>
-                  </a>
-                </button>
-                <button>
-                  <a
-                    className="px-4 py-2 rounded-xl bg-gray-800 w-[140px] justify-center text-sm font-bold flex items-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/Md-Rakib-Hassan/WeavePDF-Backend"
-                  >
-                    Server <FaGithub></FaGithub>
-                  </a>
-                </button>
-              </div>
+          <div className="my-4">
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0">
+              <button
+                onClick={() =>
+                  (
+                    document.getElementById(
+                      "my_modal_projectOne"
+                    ) as HTMLDialogElement
+                  )?.showModal()
+                }
+                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+              >
+                Details <CgDetailsMore />
+              </button>
+              <a
+                href="https://curious-dragon-bfb4a4.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+              >
+                Live Link <FaLink />
+              </a>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0 my-3">
+              <a
+                href="https://github.com/Md-Rakib-Hassan/WeavePDF"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+              >
+                Client <FaGithub />
+              </a>
+              <a
+                href="https://github.com/Md-Rakib-Hassan/WeavePDF-Backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+              >
+                Server <FaGithub />
+              </a>
             </div>
           </div>
         </div>

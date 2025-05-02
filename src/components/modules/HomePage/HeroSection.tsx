@@ -51,13 +51,13 @@ function HeroSection() {
         fill="white"
       />
 
-      <div className="lg:flex items-center">
-        <div className="p-4 relative z-10 text-left lg:w-[600]">
-          <h1 className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10">
+        <div className="p-4 relative z-10 text-left w-full lg:w-[60%]">
+          <h1 className="mt-10 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500">
             I'm ISHTIAK AHMED
           </h1>
 
-          <div className="text-2xl sm:text-lg md:text-xl font-bold text-left text-teal-500 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
+          <div className="text-xl sm:text-lg md:text-xl font-bold text-left text-teal-500 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
             <div
               className={clsx(
                 "transition-all duration-300 ease-in-out absolute w-full",
@@ -68,47 +68,44 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="max-w-lg">
-            <p className="font-normal text-base md:text-base text-neutral-300  mx-auto">
+          <div className="max-w-xl">
+            <p className="font-normal text-sm sm:text-base text-neutral-300 mx-auto">
               I’m your friendly neighbourhood Full Stack Developer, crafting
               smooth UIs with React and Next.js, and building robust backends
               with Node.js, Express, TypeScript, and Mongoose.
             </p>
           </div>
 
-          <div className="mt-4 lg:flex justify-start gap-4">
-            {/* download resume */}
+          <div className="mt-6 flex flex-col sm:flex-row flex-wrap items-center gap-4">
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-40 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
+              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 className="flex items-center gap-2"
                 href="Resume_of_Ishtiak-Ahmed.pdf"
                 download
               >
-                <FaDownload></FaDownload> Download Resume
+                <FaDownload /> Download Resume
               </a>
             </Button>
 
-            {/* download cv */}
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-40 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
+              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 className="flex items-center gap-2"
                 href="CV_of_Ishtiak-Ahmed.pdf"
                 download
               >
-                <FaFileDownload></FaFileDownload> Download CV
+                <FaFileDownload /> Download CV
               </a>
             </Button>
 
-            {/* discuss */}
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-40 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer "
+              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 href="https://wa.me/8801853196899"
@@ -122,15 +119,18 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="flex gap-6 items-center lg:w-[40%]">
-          {/* banner image */}
-          <Image
-            src={bannerImage}
-            alt="Banner Image"
-            className="w-auto rounded-xl"
-          />
+        <div className="flex flex-col lg:flex-row gap-6 items-center justify-center w-full lg:w-[40%]">
+          {/* Banner Image */}
+          <div className="flex justify-center w-full lg:w-auto">
+            <Image
+              src={bannerImage}
+              alt="Banner Image"
+              className="w-[80%] sm:w-[60%] lg:w-auto rounded-xl"
+            />
+          </div>
 
-          <div className="md:flex flex-col gap-4">
+          {/* Social Links */}
+          <div className="flex flex-row lg:flex-col gap-4 justify-center lg:justify-start">
             <Link
               href="https://github.com/Ishtiak007"
               target="_blank"

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Poppins, Ubuntu } from "next/font/google";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -8,7 +8,11 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const poppinsClassName: string = poppins.className;
+const ubuntu = Ubuntu({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Ishtiak Ahmed",
@@ -33,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${poppinsClassName}`}>{children}</body>
+      <body className={`${poppins.className}`}>{children}</body>
     </html>
   );
 }

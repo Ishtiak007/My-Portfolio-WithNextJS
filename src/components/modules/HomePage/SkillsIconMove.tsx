@@ -40,7 +40,7 @@ function SkillsIcons() {
           {/* Frontend */}
           <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Frontend Side
+              Frontend
             </h1>
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 ">
               {[
@@ -71,7 +71,7 @@ function SkillsIcons() {
           {/* Backend */}
           <div className="bg-gray-900 rounded-xl shadow-2xl p-5">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-400 text-center mb-6 text-2xl font-bold">
-              Backend Side
+              Backend
             </h1>
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
               {[

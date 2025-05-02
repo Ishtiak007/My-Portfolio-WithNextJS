@@ -1,7 +1,12 @@
+"use client"
 import GitHubCalendar from 'react-github-calendar';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const GithubContribution = () => {
+    const [imgSrc, setImgSrc] = useState(
+        "https://github-readme-streak-stats.herokuapp.com/?user=ishtiak007&theme=tokyonight"
+    );
     return (
         <div className="min-h-[65vh] bg-[#173447] px-4 py-10">
             <h1 className="text-white text-3xl font-bold text-center mb-8">
@@ -18,6 +23,17 @@ const GithubContribution = () => {
                         fontSize={16}
                     />
                 </div>
+            </div>
+
+            <div className="flex justify-center items-center my-8">
+                <Image
+                    width={500}
+                    height={200}
+                    src={imgSrc}
+                    alt="GitHub Streak"
+                    onError={() => setImgSrc("/fallback.png")} // 👈 Use your local fallback
+                    className="w-full max-w-md rounded-lg shadow-lg"
+                />
             </div>
         </div>
     );
