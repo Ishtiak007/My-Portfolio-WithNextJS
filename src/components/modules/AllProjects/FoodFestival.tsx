@@ -1,11 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import {
-  FaExternalLinkAlt,
-  FaGithub,
-  FaLink,
-  FaStreetView,
-} from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import ProjectCardImage from "../../../../public/assets/FoodFestival/food-festival.jpg";
 
@@ -17,26 +12,17 @@ import "swiper/css/effect-fade";
 import { motion } from "framer-motion";
 import { CgDetailsMore } from "react-icons/cg";
 
-import html from "../../../../public/assets/icons/html-5.png";
 import css from "../../../../public/assets/icons/css-3.png";
-import bootstrap from "../../../../public/assets/icons/bootstrap.png";
 import tailwind from "../../../../public/assets/icons/tailwind.png";
 import javascript from "../../../../public/assets/icons/js.png";
 import react from "../../../../public/assets/icons/react.png";
 import nodejs from "../../../../public/assets/icons/nodejs.png";
 import expressjs from "../../../../public/assets/icons/expressJs.png";
 import jwt from "../../../../public/assets/icons/jwt.png";
-import netlify from "../../../../public/assets/icons/netlify.webp";
-import figma from "../../../../public/assets/icons/figma.png";
-import devtools from "../../../../public/assets/icons/devTools.png";
 import mongoDb from "../../../../public/assets/icons/mongodb.png";
 import firebase from "../../../../public/assets/icons/firebase.png";
 import vercel from "../../../../public/assets/icons/vercel.svg";
-import vscode from "../../../../public/assets/icons/vscode.png";
-import mongoose from "../../../../public/assets/icons/mongoose.svg";
-import typescript from "../../../../public/assets/icons/typescript.svg";
-import nextJs from "../../../../public/assets/icons/nextjs.svg";
-import cloudinary from "../../../../public/assets/icons/cloudinary.svg";
+import daisyUi from "../../../../public/assets/icons/daisyUI.png";
 
 const FoodFestival = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -222,7 +208,9 @@ const FoodFestival = () => {
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
                   {[
+                    { icon: css, label: "Raw CSS" },
                     { icon: tailwind, label: "Tailwind" },
+                    { icon: daisyUi, label: "DaisyUI" },
                     { icon: javascript, label: "JavaScript" },
                     { icon: react, label: "React" },
                     { icon: firebase, label: "Firebase" },

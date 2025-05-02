@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
 import FoodFestival from "../AllProjects/FoodFestival";
+import OldenGoods from "../AllProjects/OldenGoods";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -10,7 +11,7 @@ const Projects = () => {
   const fullStackProjects = [
     <SecondHandMarketPlace key={1} />,
     <FoodFestival key={2} />,
-    <SecondHandMarketPlace key={3} />,
+    <OldenGoods key={3} />,
     <SecondHandMarketPlace key={5} />,
     <SecondHandMarketPlace key={6} />,
     <SecondHandMarketPlace key={7} />,

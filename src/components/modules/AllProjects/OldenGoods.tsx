@@ -1,13 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
-import {
-  FaExternalLinkAlt,
-  FaGithub,
-  FaLink,
-  FaStreetView,
-} from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import ProjectCardImage from "../../../../public/assets/SecondHandMarketPlace/HomePage.png";
+import ProjectCardImage from "../../../../public/assets/OldenGoods/olden-goods.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
@@ -17,70 +13,42 @@ import "swiper/css/effect-fade";
 import { motion } from "framer-motion";
 import { CgDetailsMore } from "react-icons/cg";
 
-import html from "../../../../public/assets/icons/html-5.png";
 import css from "../../../../public/assets/icons/css-3.png";
-import bootstrap from "../../../../public/assets/icons/bootstrap.png";
 import tailwind from "../../../../public/assets/icons/tailwind.png";
 import javascript from "../../../../public/assets/icons/js.png";
 import react from "../../../../public/assets/icons/react.png";
 import nodejs from "../../../../public/assets/icons/nodejs.png";
 import expressjs from "../../../../public/assets/icons/expressJs.png";
 import jwt from "../../../../public/assets/icons/jwt.png";
-import netlify from "../../../../public/assets/icons/netlify.webp";
-import figma from "../../../../public/assets/icons/figma.png";
-import devtools from "../../../../public/assets/icons/devTools.png";
 import mongoDb from "../../../../public/assets/icons/mongodb.png";
 import firebase from "../../../../public/assets/icons/firebase.png";
 import vercel from "../../../../public/assets/icons/vercel.svg";
-import vscode from "../../../../public/assets/icons/vscode.png";
-import mongoose from "../../../../public/assets/icons/mongoose.svg";
-import typescript from "../../../../public/assets/icons/typescript.svg";
-import nextJs from "../../../../public/assets/icons/nextjs.svg";
-import cloudinary from "../../../../public/assets/icons/cloudinary.svg";
 import daisyUi from "../../../../public/assets/icons/daisyUI.png";
 
-const SecondHandMarketPlace = () => {
+const OldenGoods = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const data = [
     {
-      img: "/assets/SecondHandMarketPlace/AboutUsPage.png",
+      img: "/assets/OldenGoods/og1.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/AddProduct.png",
+      img: "/assets/OldenGoods/og2.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/AllProducts.png",
+      img: "/assets/OldenGoods/og3.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/ContactPage.png",
+      img: "/assets/OldenGoods/og4.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/CheckOutPage.png",
+      img: "/assets/OldenGoods/og5.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/FAQPage.png",
+      img: "/assets/OldenGoods/og6.png",
     },
     {
-      img: "/assets/SecondHandMarketPlace/ManageAllProducts.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/ManageAllUser.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/PaymentPage.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/ProductDetails.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/ProfilePage.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/Purchases.png",
-    },
-    {
-      img: "/assets/SecondHandMarketPlace/Sales.png",
+      img: "/assets/OldenGoods/og7.png",
     },
   ];
   return (
@@ -98,12 +66,12 @@ const SecondHandMarketPlace = () => {
         {/* Content */}
         <div className="p-4">
           <h2 className="text-base sm:text-xl md:text-xl font-medium mb-2 text-white">
-            SecondHand Marketplace
+            Olden Goods
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-[13px] sm:text-base mb-4">
-            SecondHand Marketplace is a full-stack app for buying, selling,
-            managing, and bookmarking goods with strong admin and transaction
-            control.
+            Olden Goods is a vintage marketplace for buying and selling
+            antiques, connecting enthusiasts with cherished heirlooms and
+            timeless treasures.
           </p>
 
           {/* links */}
@@ -113,7 +81,7 @@ const SecondHandMarketPlace = () => {
                 onClick={() =>
                   (
                     document.getElementById(
-                      "my_modal_SecondHandMarketPlace"
+                      "my_modal_oldengoods"
                     ) as HTMLDialogElement
                   )?.showModal()
                 }
@@ -124,7 +92,7 @@ const SecondHandMarketPlace = () => {
 
               {/* Live Link */}
               <a
-                href="https://second-hand-marketplace-client-seven.vercel.app/"
+                href="https://olden-goods.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -136,7 +104,7 @@ const SecondHandMarketPlace = () => {
             <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0 my-3">
               {/* Frontend github */}
               <a
-                href="https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file"
+                href="https://github.com/Ishtiak007/Olden-Goods-Client"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -144,7 +112,7 @@ const SecondHandMarketPlace = () => {
                 Client <FaGithub />
               </a>
               <a
-                href="https://github.com/Ishtiak007/SecondHandMarketplace-Server"
+                href="https://github.com/Ishtiak007/Olden-Goods-Backend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -158,7 +126,7 @@ const SecondHandMarketPlace = () => {
 
       {/* Modal */}
       <dialog
-        id="my_modal_SecondHandMarketPlace"
+        id="my_modal_oldengoods"
         className="modal scrollbar-hidden rounded-md"
       >
         <div className="bg-[#173447] modal-box w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl p-4 sm:px-4">
@@ -200,16 +168,16 @@ const SecondHandMarketPlace = () => {
             <div className="max-w-screen-xl mx-auto space-y-7">
               <div>
                 <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 my-5">
-                  SecondHand Marketplace
+                  Olden Goods
                 </h2>
                 <p className="text-center">
-                  SecondHand Marketplace - My latest project, a Full-stack web
-                  application where users can post, sell, manage, buy, and
-                  bookmark second-hand goods. It offers a seamless experience
-                  with safe transactions, tidy product management, and strong
-                  admin controls. Here Admins have full authority to manage
-                  users, products, and transactions for a secure and hassle-free
-                  experience for everyone.
+                  Whether you're looking to sell a treasured heirloom or hoping
+                  to stumble upon a forgotten gem, Olden Goods is the perfect
+                  place for vintage lovers. It's a marketplace where every item
+                  tells a story—and history finds a new home. From antiques to
+                  collectibles, we connect people who appreciate the beauty of
+                  the old and timeless. Come explore, share, and relive the
+                  past—one piece at a time.
                 </p>
               </div>
               <h2 className="text-xl font-bold text-center text-transparent bg-clip-text bg-white">
@@ -223,11 +191,12 @@ const SecondHandMarketPlace = () => {
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
                   {[
-                    { icon: css, label: "CSS" },
+                    { icon: css, label: "Raw CSS" },
+                    { icon: tailwind, label: "Tailwind" },
+                    { icon: daisyUi, label: "DaisyUI" },
                     { icon: javascript, label: "JavaScript" },
-                    { icon: typescript, label: "Typescript" },
-                    { icon: nextJs, label: "NextJs" },
-                    { icon: tailwind, label: "Tailwind CSS" },
+                    { icon: react, label: "React" },
+                    { icon: firebase, label: "Firebase" },
                   ].map((tech, idx) => (
                     <div
                       key={idx}
@@ -251,12 +220,11 @@ const SecondHandMarketPlace = () => {
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
                   {[
-                    { icon: typescript, label: "Typescript" },
                     { icon: nodejs, label: "NodeJS" },
                     { icon: expressjs, label: "ExpressJS" },
-                    { icon: mongoose, label: "Mongoose" },
                     { icon: mongoDb, label: "MongoDB" },
-                    { icon: cloudinary, label: "Cloudinary" },
+                    { icon: jwt, label: "JWT" },
+                    { icon: vercel, label: "Vercel" },
                   ].map((tech, idx) => (
                     <div
                       key={idx}
@@ -280,4 +248,4 @@ const SecondHandMarketPlace = () => {
   );
 };
 
-export default SecondHandMarketPlace;
+export default OldenGoods;
