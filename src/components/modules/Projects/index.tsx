@@ -7,6 +7,7 @@ import OldenGoods from "../AllProjects/OldenGoods";
 import PetAdoption from "../AllProjects/PetAdoption";
 import AlemenoAcademy from "../AllProjects/AlemenoAcademy";
 import StationeryShop from "../AllProjects/StationeryShop";
+import ShebaDashboard from "../AllProjects/ShebaDashboard";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
@@ -22,7 +23,7 @@ const Projects = () => {
   ];
 
   // Frontend projects
-  const frontEndProjects = [""];
+  const frontEndProjects = [<ShebaDashboard key={7} />];
 
   const currentProjects =
     activeTab === "fullstack" ? fullStackProjects : frontEndProjects;
