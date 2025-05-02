@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import ProjectCardImage from "../../../../public/assets/ShebaDashboard/homePage.png";
+import ProjectCardImage from "../../../../public/assets/ShreyuDashboard/dashboard1.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
@@ -15,37 +15,51 @@ import { CgDetailsMore } from "react-icons/cg";
 
 import css from "../../../../public/assets/icons/css-3.png";
 import tailwind from "../../../../public/assets/icons/tailwind.png";
-import javascript from "../../../../public/assets/icons/js.png";
 import react from "../../../../public/assets/icons/react.png";
-import nodejs from "../../../../public/assets/icons/nodejs.png";
-import expressjs from "../../../../public/assets/icons/expressJs.png";
-import jwt from "../../../../public/assets/icons/jwt.png";
-import mongoDb from "../../../../public/assets/icons/mongodb.png";
-import firebase from "../../../../public/assets/icons/firebase.png";
-import vercel from "../../../../public/assets/icons/vercel.svg";
 import daisyUi from "../../../../public/assets/icons/daisyUI.png";
 
-const ShebaDashboard = () => {
+const ShreyuDashboard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const data = [
     {
-      img: "/assets/ShebaDashboard/sd1.png",
+      img: "/assets/ShreyuDashboard/dashboard2.png",
     },
     {
-      img: "/assets/ShebaDashboard/sd2.png",
+      img: "/assets/ShreyuDashboard/dashboard3.png",
     },
     {
-      img: "/assets/ShebaDashboard/sd3.png",
+      img: "/assets/ShreyuDashboard/dashboard4.png",
     },
     {
-      img: "/assets/ShebaDashboard/sd4.png",
+      img: "/assets/ShreyuDashboard/dashboard5.png",
     },
     {
-      img: "/assets/ShebaDashboard/sd5.png",
+      img: "/assets/ShreyuDashboard/dashboard6.jpg",
     },
     {
-      img: "/assets/ShebaDashboard/sd6.png",
+      img: "/assets/ShreyuDashboard/dashboard7.jpg",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard8.jpg",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard9.jpg",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard10.png",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard11.png",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard12.jpg",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard13.png",
+    },
+    {
+      img: "/assets/ShreyuDashboard/dashboard14.jpg",
     },
   ];
   return (
@@ -63,12 +77,11 @@ const ShebaDashboard = () => {
         {/* Content */}
         <div className="p-4">
           <h2 className="text-base sm:text-xl md:text-xl font-medium mb-2 text-white">
-            Sheba Dashboard
+            Shreyu Dashboard
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-[13px] sm:text-base mb-4">
-            A sleek ReactJS Dashboard built with Tailwind CSS, offering a
-            responsive, modern, and intuitive user interface for smooth
-            experiences.
+            Shreyu Dashboard features a contemporary design, seamlessly blending
+            Tailwind CSS and React to deliver a refined frontend experience.
           </p>
 
           {/* links */}
@@ -78,7 +91,7 @@ const ShebaDashboard = () => {
                 onClick={() =>
                   (
                     document.getElementById(
-                      "my_modal_ShebaDashboard"
+                      "my_modal_ShreyuDashboard"
                     ) as HTMLDialogElement
                   )?.showModal()
                 }
@@ -89,7 +102,7 @@ const ShebaDashboard = () => {
 
               {/* Live Link */}
               <a
-                href="https://sheba-dashboard.netlify.app/dashboard/dashboardHome"
+                href="https://shreyu-dashboard-implementation.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -101,7 +114,7 @@ const ShebaDashboard = () => {
             <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0 my-3">
               {/* Frontend github */}
               <a
-                href="https://github.com/Ishtiak007/Sheba-Dashboard"
+                href="https://github.com/Ishtiak007/SHREYU-Client"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -109,7 +122,7 @@ const ShebaDashboard = () => {
                 Client <FaGithub />
               </a>
               <a
-                href="https://github.com/Ishtiak007/Sheba-Dashboard"
+                href="https://github.com/Ishtiak007/SHREYU-Client"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
@@ -123,7 +136,7 @@ const ShebaDashboard = () => {
 
       {/* Modal */}
       <dialog
-        id="my_modal_ShebaDashboard"
+        id="my_modal_ShreyuDashboard"
         className="modal scrollbar-hidden rounded-md"
       >
         <div className="bg-[#173447] modal-box w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl p-4 sm:px-4">
@@ -165,15 +178,14 @@ const ShebaDashboard = () => {
             <div className="max-w-screen-xl mx-auto space-y-7">
               <div>
                 <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 my-5">
-                  Sheba Dashboard
+                  Shreyu Dashboard
                 </h2>
                 <p className="text-center">
-                  Crafted with ReactJS and styled using Tailwind CSS, this
-                  dashboard offers a modern, responsive, and intuitive user
-                  interface. Whether you're managing data or tracking
-                  performance, every component is designed to deliver a smooth
-                  and efficient experience across all devices. Clean design
-                  meets powerful functionality—perfect for modern web apps.
+                  Shreyu Dashboard combines the power of React with the elegance
+                  of Tailwind CSS to deliver a clean, responsive, and
+                  contemporary frontend interface. Every detail is thoughtfully
+                  crafted to enhance usability, making it perfect for modern web
+                  applications that need both style and performance.
                 </p>
               </div>
               <h2 className="text-xl font-bold text-center text-transparent bg-clip-text bg-white">
@@ -191,7 +203,6 @@ const ShebaDashboard = () => {
                     { icon: tailwind, label: "Tailwind" },
                     { icon: daisyUi, label: "DaisyUI" },
                     { icon: react, label: "React" },
-                    { icon: firebase, label: "Firebase" },
                   ].map((tech, idx) => (
                     <div
                       key={idx}
@@ -215,4 +226,4 @@ const ShebaDashboard = () => {
   );
 };
 
-export default ShebaDashboard;
+export default ShreyuDashboard;
