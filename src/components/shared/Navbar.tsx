@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaHome, FaUser } from "react-icons/fa";
+import { FaBlog, FaCode, FaHome, FaUser } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { FloatingNav } from "../ui/floating-navbar";
 export function Navbar() {
@@ -13,12 +13,12 @@ export function Navbar() {
     {
       name: "PROJECTS",
       link: "/projects",
-      icon: <FaUser className="h-4 w-4 text-white" />,
+      icon: <FaCode className="h-4 w-4 text-white" />,
     },
     {
       name: "BLOGS",
       link: "/blogs",
-      icon: <FaUser className="h-4 w-4 text-white" />,
+      icon: <FaBlog className="h-4 w-4 text-white" />,
     },
     {
       name: "CONTACT",
