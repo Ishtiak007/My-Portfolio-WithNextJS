@@ -1,38 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ishtiak Ahmed Portfolio
 
-## Getting Started
+**Live Demo (Frontend)**: [Ishtiak Ahmed](https://ishtiak-ahmed.vercel.app/)
 
-First, run the development server:
+# 🚀 How to Run a Next.js Project
+
+This guide walks you through setting up and running a Next.js project locally.
+
+---
+
+## 📦 Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16.8 or higher recommended)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+---
+
+## 📁 Clone the Project
+
+```bash
+git clone https://github.com/Ishtiak007/My-Portfolio-WithNextJS
+cd My-Portfolio-WithNextJS
+```
+
+---
+
+## 📥 Install Dependencies
+
+Using **npm**:
+
+```bash
+npm install
+```
+
+Or using **Yarn**:
+
+```bash
+yarn install
+```
+
+---
+
+## 🏃‍♂️ Run the Development Server
+
+Using **npm**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or using **Yarn**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Build for Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then, to start the production server:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Run Tests (if available)
 
-# My-Portfolio-WithNextJS
+```bash
+npm test
+```
+
+---
+
+## 🔧 Environment Variables (Optional)
+
+Create a `.env.local` file in the root of your project:
+
+```env
+NEXT_PUBLIC_API_URL=https://api.example.com
+```
+
+---
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
