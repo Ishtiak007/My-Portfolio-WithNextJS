@@ -12,8 +12,8 @@ This guide walks you through setting up and running a Next.js project locally.
 
 Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v16.8 or higher recommended)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) (v22.15.0 recommended)
+- [npm](https://www.npmjs.com/)
 
 ---
 
