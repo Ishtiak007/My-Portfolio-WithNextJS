@@ -94,183 +94,26 @@ const FoodFestival = () => {
           {/* links */}
           <div className="my-4">
             <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0">
-              {/* <button
-                onClick={() =>
-                  (
-                    document.getElementById(
-                      "my_modal_foodfestival"
-                    ) as HTMLDialogElement
-                  )?.showModal()
-                }
-                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-              >
-                Details <CgDetailsMore />
-              </button> */}
               <button
-                onClick={() =>
-                  router.push(`/projectDetails/SecondHandMarketPlace2`)
-                }
-                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+                onClick={() => router.push(`/projectDetails/FoodFestival`)}
+                className="px-6 py-2 text-white font-semibold bg-gradient-to-bl from-violet-500 to-fuchsia-500 hover:brightness-110 transition duration-300 flex items-center gap-3"
               >
                 Details <CgDetailsMore />
               </button>
 
               {/* Live Link */}
               <a
-                href="https://food-festival-project.web.app/"
+                href="https://second-hand-marketplace-client-seven.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+                className="px-6 py-2 text-white font-semibold bg-gradient-to-bl from-violet-500 to-fuchsia-500 hover:brightness-110 transition duration-300 flex items-center gap-3"
               >
                 Live Link <FaLink />
-              </a>
-            </div>
-
-            <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0 my-3">
-              {/* Frontend github */}
-              <a
-                href="https://github.com/Ishtiak007/Food-Festival-Client"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-              >
-                Client <FaGithub />
-              </a>
-              <a
-                href="https://github.com/Ishtiak007/Food-Festival-Server"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
-              >
-                Server <FaGithub />
               </a>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      <dialog
-        id="my_modal_foodfestival"
-        className="modal scrollbar-hidden rounded-md"
-      >
-        <div className="bg-white/5 border-white/10 backdrop-blur-lg modal-box w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl p-4 sm:px-4">
-          <div className="modal-action flex justify-end my-2">
-            <form method="dialog">
-              <button className="bg-white rounded-full p-2 sm:p-4 flex justify-center gap-2 items-center">
-                <RxCross2 className="font-extrabold" />
-              </button>
-            </form>
-          </div>
-          <>
-            <div className="flex justify-center items-center m-auto rounded-md">
-              <Swiper
-                modules={[Navigation, Autoplay, EffectFade]}
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={{ delay: 6000, disableOnInteraction: false }}
-                effect="fade"
-                fadeEffect={{ crossFade: true }}
-                speed={3000}
-                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-              >
-                {data.map((d, index) => (
-                  <SwiperSlide key={index}>
-                    <motion.div
-                      key={activeIndex}
-                      className="relative w-full mx-auto h-[200px] sm:h-[350px] md:h-[500px] lg:h-[650px] bg-cover bg-center bg-no-repeat px-2 sm:px-4 rounded-md"
-                      style={{ backgroundImage: `url(${d.img})` }}
-                      initial={{ scale: 1.2 }}
-                      animate={{ scale: 1 }}
-                      transition={{ duration: 3, ease: "easeOut" }}
-                    ></motion.div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </>
-          <section className="bg-gray-900 text-white py-5 px-4">
-            <div className="max-w-screen-xl mx-auto space-y-7">
-              <div>
-                <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 my-5">
-                  Food Festival
-                </h2>
-                <p className="text-center">
-                  This project to blend the joy of food with the power of
-                  technology. It’s more than just an ordering system—it’s a full
-                  digital dining experience. With role-based access, users can
-                  easily sign up, admins can manage menus, and everything runs
-                  smoothly behind the scenes with approval workflows and
-                  inventory control. Payments? 100% secure with Stripe. As an
-                  admin, you can curate the menu, manage your team, and oversee
-                  everything with ease. It’s simple, smart, and satisfying—just
-                  like good food should be.
-                </p>
-              </div>
-              <h2 className="text-xl font-bold text-center text-transparent bg-clip-text bg-white">
-                Used Technologies
-              </h2>
-
-              {/* Frontend */}
-              <div>
-                <h3 className="text-lg font-semibold mb-6 text-center underline text-white uppercase">
-                  Frontend
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
-                  {[
-                    { icon: css, label: "Raw CSS" },
-                    { icon: tailwind, label: "Tailwind" },
-                    { icon: daisyUi, label: "DaisyUI" },
-                    { icon: javascript, label: "JavaScript" },
-                    { icon: react, label: "React" },
-                    { icon: firebase, label: "Firebase" },
-                  ].map((tech, idx) => (
-                    <div
-                      key={idx}
-                      className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform duration-300"
-                    >
-                      <Image
-                        src={tech.icon}
-                        alt={tech.label}
-                        className="w-7 h-7"
-                      />
-                      <p className="mt-2 text-sm">{tech.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Backend */}
-              <div>
-                <h3 className="text-lg font-semibold mb-6 text-center underline text-white uppercase">
-                  Backend
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
-                  {[
-                    { icon: nodejs, label: "NodeJS" },
-                    { icon: expressjs, label: "ExpressJS" },
-                    { icon: mongoDb, label: "MongoDB" },
-                    { icon: jwt, label: "JWT" },
-                    { icon: vercel, label: "Vercel" },
-                  ].map((tech, idx) => (
-                    <div
-                      key={idx}
-                      className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform duration-300"
-                    >
-                      <Image
-                        src={tech.icon}
-                        alt={tech.label}
-                        className="w-7 h-7"
-                      />
-                      <p className="mt-2 text-sm">{tech.label}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </dialog>
     </div>
   );
 };

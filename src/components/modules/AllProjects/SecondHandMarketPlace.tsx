@@ -38,7 +38,7 @@ const SecondHandMarketPlace = () => {
                 onClick={() =>
                   router.push(`/projectDetails/SecondHandMarketPlace`)
                 }
-                className="w-full sm:w-[140px] px-4 py-2 bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+                className="px-6 py-2 text-white font-semibold bg-gradient-to-bl from-violet-500 to-fuchsia-500 hover:brightness-110 transition duration-300 flex items-center gap-3"
               >
                 Details <CgDetailsMore />
               </button>
@@ -48,7 +48,7 @@ const SecondHandMarketPlace = () => {
                 href="https://second-hand-marketplace-client-seven.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-[140px] px-4 py-2 bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+                className="px-6 py-2 text-white font-semibold bg-gradient-to-bl from-violet-500 to-fuchsia-500 hover:brightness-110 transition duration-300 flex items-center gap-3"
               >
                 Live Link <FaLink />
               </a>
