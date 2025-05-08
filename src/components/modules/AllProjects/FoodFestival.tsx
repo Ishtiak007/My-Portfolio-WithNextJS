@@ -1,72 +1,15 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { FaGithub, FaLink } from "react-icons/fa";
-import { RxCross2 } from "react-icons/rx";
+import { FaLink } from "react-icons/fa";
 import ProjectCardImage from "../../../../public/assets/FoodFestival/food-festival.jpg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectFade } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-import { motion } from "framer-motion";
 import { CgDetailsMore } from "react-icons/cg";
 
-import css from "../../../../public/assets/icons/css-3.png";
-import tailwind from "../../../../public/assets/icons/tailwind.png";
-import javascript from "../../../../public/assets/icons/js.png";
-import react from "../../../../public/assets/icons/react.png";
-import nodejs from "../../../../public/assets/icons/nodejs.png";
-import expressjs from "../../../../public/assets/icons/expressJs.png";
-import jwt from "../../../../public/assets/icons/jwt.png";
-import mongoDb from "../../../../public/assets/icons/mongodb.png";
-import firebase from "../../../../public/assets/icons/firebase.png";
-import vercel from "../../../../public/assets/icons/vercel.svg";
-import daisyUi from "../../../../public/assets/icons/daisyUI.png";
 import { useRouter } from "next/navigation";
 
 const FoodFestival = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
-
-  const data = [
-    {
-      img: "/assets/FoodFestival/ff1.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff2.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff3.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff4.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff5.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff6.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff7.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff8.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff9.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff10.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff11.png",
-    },
-    {
-      img: "/assets/FoodFestival/ff12.png",
-    },
-  ];
 
   return (
     <div className="w-full max-w-3xl mx-auto mt-10 px-4">
