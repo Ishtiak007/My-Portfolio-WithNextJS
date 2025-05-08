@@ -17,7 +17,7 @@ export function BlogCard3D({
 }) {
   return (
     <CardContainer className="inter-var w-full max-w-md">
-      <CardBody className="bg-white dark:bg-black border p-4 sm:p-6 rounded-xl w-full h-full flex flex-col justify-between">
+      <CardBody className="bg-white/5 border-white/10 backdrop-blur-lg border p-4 sm:p-6 rounded-xl w-full h-full flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
@@ -46,7 +46,7 @@ export function BlogCard3D({
 
         <div className="mt-6 text-right">
           <CardItem translateZ={20} as={Link} href={link}>
-            <button className="py-2 px-4 bg-fuchsia-500 text-white text-sm rounded-md hover:bg-fuchsia-600 transition">
+            <button className="py-2 px-4 bg-fuchsia-700 text-white text-sm hover:bg-fuchsia-800 transition">
               Read More →
             </button>
           </CardItem>
