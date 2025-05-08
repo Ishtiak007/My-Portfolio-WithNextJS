@@ -23,9 +23,11 @@ import mongoDb from "../../../../public/assets/icons/mongodb.png";
 import firebase from "../../../../public/assets/icons/firebase.png";
 import vercel from "../../../../public/assets/icons/vercel.svg";
 import daisyUi from "../../../../public/assets/icons/daisyUI.png";
+import { useRouter } from "next/navigation";
 
 const FoodFestival = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const router = useRouter();
 
   const data = [
     {
@@ -92,13 +94,21 @@ const FoodFestival = () => {
           {/* links */}
           <div className="my-4">
             <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0">
-              <button
+              {/* <button
                 onClick={() =>
                   (
                     document.getElementById(
                       "my_modal_foodfestival"
                     ) as HTMLDialogElement
                   )?.showModal()
+                }
+                className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
+              >
+                Details <CgDetailsMore />
+              </button> */}
+              <button
+                onClick={() =>
+                  router.push(`/projectDetails/SecondHandMarketPlace2`)
                 }
                 className="w-full sm:w-[140px] px-4 py-2 rounded-xl bg-gray-800 text-sm font-bold flex items-center justify-center gap-2 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-gray-700 hover:scale-105 hover:shadow-lg active:scale-95"
               >
