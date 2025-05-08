@@ -1,51 +1,23 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
-import React, { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
+import React, { useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const EducationBG = () => {
   const containerRef = useRef(null);
 
-  useGSAP(
-    () => {
-      const ctx = gsap.context(() => {
-        gsap.from(".edu-header", {
-          opacity: 0,
-          y: -30,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
-        });
-
-        gsap.from(".edu-box", {
-          opacity: 0,
-          x: -30,
-          duration: 1,
-          stagger: 0.3,
-          ease: "power2.out",
-          delay: 0.5,
-        });
-
-        gsap.from(".dev-box", {
-          opacity: 0,
-          x: 30,
-          duration: 1,
-          stagger: 0.3,
-          ease: "power2.out",
-          delay: 1,
-        });
-      }, containerRef);
-      return () => ctx.revert();
-    },
-    { scope: containerRef }
-  );
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <div ref={containerRef} className="lg:p-7 bg-fuchsia-800/15">
-      <div className="text-center py-8">
+      <div className="text-center py-8" data-aos="fade-down">
         <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Educational Background
         </p>
@@ -54,17 +26,23 @@ const EducationBG = () => {
         </h2>
       </div>
 
-      <div className="lg:flex gap-4 ">
+      <div className="lg:flex gap-4 " data-aos="fade-up">
         {/* Education Section */}
-        <div className="space-y-6 relative pl-5 border-l-2 border-gray-400 flex-1">
+        <div
+          className="space-y-6 relative pl-5 border-l-2 border-gray-400 flex-1"
+          data-aos="fade-right"
+        >
           <div className="text-center mb-6">
-            <h3 className="text-xl font-semibold text-white edu-header">
+            <h3 className="text-xl font-semibold text-white">
               Education Details
             </h3>
           </div>
 
           {/* Box 1 */}
-          <div className="relative pl-5 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+          <div
+            data-aos="fade-right"
+            className="relative pl-5 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+          >
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
             <h4 className="text-gray-300 font-semibold">Batch 2017</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -79,7 +57,10 @@ const EducationBG = () => {
           </div>
 
           {/* Box 2 */}
-          <div className="relative pl-5 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+          <div
+            data-aos="fade-right"
+            className="relative pl-5 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+          >
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
             <h4 className="text-gray-300 font-semibold">2017 - 2019</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -94,7 +75,10 @@ const EducationBG = () => {
           </div>
 
           {/* Box 3 */}
-          <div className="relative pl-5 pb-0 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+          <div
+            className="relative pl-5 pb-0 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+            data-aos="fade-right"
+          >
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
             <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -154,16 +138,22 @@ const EducationBG = () => {
         </div>
 
         {/* Development Experience */}
-        <div className="space-y-6 relative pl-5 border-gray-400 flex-1">
+        <div
+          className="space-y-6 relative pl-5 border-gray-400 flex-1"
+          data-aos="fade-left"
+        >
           <div className="text-center mb-6">
-            <h3 className="text-xl font-semibold text-white edu-header">
+            <h3 className="text-xl font-semibold text-white">
               Development Experience
             </h3>
           </div>
 
           <div className="space-y-6 relative pl-5 border-l-2 border-gray-400">
             {/* Box 1 */}
-            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <div
+              className="relative pl-5 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+              data-aos="fade-left"
+            >
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
@@ -178,15 +168,17 @@ const EducationBG = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <div
+              className="relative pl-5 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+              data-aos="fade-left"
+            >
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Frontend Development
               </h3>
               <p className="text-[15px] text-gray-300">
-                Expertise in
-                <span className="text-blue-300"> Typescript</span>,
+                Expertise in <span className="text-blue-300"> Typescript</span>,
                 <span className="text-blue-300"> Javascript</span>,
                 <span className="text-blue-300"> React JS</span>,
                 <span className="text-blue-300"> Next JS</span>,
@@ -197,14 +189,17 @@ const EducationBG = () => {
             </div>
 
             {/* Box 3 */}
-            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <div
+              className="relative pl-5 bg-white/5 border-white/10 backdrop-blur-lg p-3"
+              data-aos="fade-left"
+            >
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Backend Development
               </h3>
               <p className="text-[15px] text-gray-300">
-                Specializing in
+                Specializing in{" "}
                 <span className="text-blue-300"> Typescript</span>,
                 <span className="text-blue-300"> Node.js</span>,
                 <span className="text-blue-300"> Express.js</span>,

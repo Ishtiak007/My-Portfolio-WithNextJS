@@ -25,11 +25,21 @@ import nextJs from "../../../../public/assets/icons/nextjs.svg";
 import redux from "../../../../public/assets/icons/redux.svg";
 import cloudinary from "../../../../public/assets/icons/cloudinary.svg";
 import github from "../../../../public/assets/icons/github.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function SkillsIcons() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div className="min-h-screen w-full dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden p-5">
-      <div className="text-center py-8">
+      <div data-aos="fade-up" className="text-center py-8">
         <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Technologies & Tools
         </p>
@@ -37,7 +47,7 @@ function SkillsIcons() {
           Skills
         </h2>
       </div>
-      <div className="px-4 py-10">
+      <div data-aos="fade-right" className="px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto">
           {/* Section Template */}
           {[

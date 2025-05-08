@@ -10,6 +10,8 @@ import {
   useAnimationControls,
 } from "motion/react";
 import { cn } from "@/utils/cn";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const DraggableCardBody = ({
   className,
@@ -104,6 +106,14 @@ export const DraggableCardBody = ({
     mouseY.set(0);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <motion.div
       ref={cardRef}
@@ -187,7 +197,7 @@ export const DraggableCardContainer = ({
 }) => {
   return (
     <div>
-      <div className="text-center py-8">
+      <div data-aos="fade-up" className="text-center py-8">
         <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           20 + Complete Projects
         </p>

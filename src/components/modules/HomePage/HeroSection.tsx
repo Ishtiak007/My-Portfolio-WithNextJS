@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import bannerImage from "../../../../public/assets/BannerImage.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   FaGithub,
@@ -32,6 +34,14 @@ function HeroSection() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setFade(true); // Trigger fade out
       setTimeout(() => {
@@ -50,7 +60,10 @@ function HeroSection() {
         fill="gray"
       /> */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10 bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:6rem_4rem] h-full">
-        <div className="p-4 relative z-10 text-left w-full lg:w-[60%]">
+        <div
+          data-aos="fade-right"
+          className="p-4 relative z-10 text-left w-full lg:w-[60%]"
+        >
           <h1 className="mt-10 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500">
             I'm ISHTIAK AHMED
           </h1>
@@ -117,7 +130,10 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6 items-center justify-center w-full lg:w-[40%]">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col lg:flex-row gap-6 items-center justify-center w-full lg:w-[40%]"
+        >
           {/* Banner Image */}
           <div className="flex justify-center w-full lg:w-auto">
             <Image

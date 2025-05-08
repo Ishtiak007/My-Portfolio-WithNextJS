@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SecondHandMarketPlace from "../AllProjects/SecondHandMarketPlace";
 import FoodFestival from "../AllProjects/FoodFestival";
@@ -12,9 +12,19 @@ import ShreyuDashboard from "../AllProjects/ShreyuDashboard";
 import LibraryManagement from "../AllProjects/LibraryManagement";
 import TaskManagement from "../AllProjects/TaskManagement";
 import WeavePDF from "../AllProjects/WeavePDF";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("fullstack");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   // Full stack projects
   const fullStackProjects = [
@@ -40,7 +50,7 @@ const Projects = () => {
 
   return (
     <div className="bg-white/5 border-white/10 backdrop-blur-lg">
-      <div className="text-center py-8">
+      <div data-aos="fade-up" className="text-center py-8">
         <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Here are some projects with Forrentend and Fullstack.
         </p>

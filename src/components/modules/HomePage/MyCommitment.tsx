@@ -5,6 +5,9 @@ import { FaCode, FaLaptop, FaLaptopCode } from "react-icons/fa";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { GrServices } from "react-icons/gr";
 import { IoIosLaptop } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const commitment = [
   {
@@ -46,10 +49,17 @@ const commitment = [
 ];
 
 function MyCommitment() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div className="py-12">
       <div>
-        <div className="text-center py-8">
+        <div data-aos="fade-up" className="text-center py-8">
           <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
             Building the Web, End to End
           </p>
@@ -59,7 +69,10 @@ function MyCommitment() {
         </div>
       </div>
       <div className="mt-10 mx-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div
+          data-aos="fade-left"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
+        >
           {commitment.map((c) => (
             <div key={c.title} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">

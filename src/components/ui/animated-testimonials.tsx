@@ -6,6 +6,9 @@ import Image from "next/image";
 
 import { useEffect, useState } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 type Testimonial = {
   quote: string;
   name: string;
@@ -43,11 +46,19 @@ export const AnimatedTestimonials = ({
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div className="mx-auto max-w-sm px-4 py-20 antialiased md:max-w-4xl md:px-8 lg:px-12">
       <div className="relative grid grid-cols-1 gap-10 md:grid-cols-2">
         <div>
-          <div className="relative h-[280px] w-[270px]">
+          <div data-aos="fade-right" className="relative h-[280px] w-[270px]">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -94,7 +105,10 @@ export const AnimatedTestimonials = ({
           </div>
         </div>
 
-        <div className="flex flex-col justify-between py-4 bg-white/5 border-white/10 backdrop-blur-lg p-4 rounded-lg">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col justify-between py-4 bg-white/5 border-white/10 backdrop-blur-lg p-4 rounded-lg"
+        >
           <motion.div
             key={active}
             initial={{
