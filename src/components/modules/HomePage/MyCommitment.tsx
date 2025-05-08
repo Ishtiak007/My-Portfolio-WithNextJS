@@ -47,15 +47,15 @@ const commitment = [
 
 function MyCommitment() {
   return (
-    <div className="py-12 bg-gray-900">
+    <div className="py-12">
       <div>
-        <div className="text-center">
-          <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+        <div className="text-center py-8">
+          <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
             Building the Web, End to End
-          </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-            Commitments
           </p>
+          <h2 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+            Commitments
+          </h2>
         </div>
       </div>
       <div className="mt-10 mx-8">

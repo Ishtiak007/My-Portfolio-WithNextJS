@@ -43,11 +43,11 @@ export default function RepoGazer() {
           placeholder="Enter GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="px-4 py-2 border border-teal-600 rounded-t-full md:rounded-l-full md:rounded-tr-none w-full max-w-md focus:outline-none text-black focus:ring-0 focus:border-teal-500"
+          className="px-4 py-2 border border-fuchsia-600 rounded-t-full md:rounded-l-full md:rounded-tr-none w-full max-w-md focus:outline-none text-black focus:ring-0 focus:border-fuchsia-500"
         />
         <button
           onClick={fetchGitHubData}
-          className="bg-teal-600 text-white px-4 py-2 border border-teal-600 rounded-b-full md:rounded-r-full md:rounded-bl-none w-full md:w-auto max-w-md hover:bg-teal-700 transition"
+          className="bg-fuchsia-600 text-white px-4 py-2 border border-fuchsia-600 rounded-b-full md:rounded-r-full md:rounded-bl-none w-full md:w-auto max-w-md hover:bg-fuchsia-700 transition"
         >
           Search Profile
         </button>

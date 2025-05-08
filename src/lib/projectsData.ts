@@ -1,21 +1,34 @@
 // You can import images directly or use paths (recommended for public assets)
-import javascript from "../../public/assets/icons/js.png";
-import typescript from "../../public/assets/icons/typescript.svg";
+import html from "../../public/assets/icons/html-5.png";
+import css from "../../public/assets/icons/css-3.png";
+import bootstrap from "../../public/assets/icons/bootstrap.png";
 import tailwind from "../../public/assets/icons/tailwind.png";
-import redux from "../../public/assets/icons/redux.svg";
-import nextJs from "../../public/assets/icons/nextjs.svg";
+import javascript from "../../public/assets/icons/js.png";
+import react from "../../public/assets/icons/react.png";
 import nodejs from "../../public/assets/icons/nodejs.png";
 import expressjs from "../../public/assets/icons/expressJs.png";
-import mongoDb from "../../public/assets/icons/mongodb.png";
-import mongoose from "../../public/assets/icons/mongoose.svg";
 import jwt from "../../public/assets/icons/jwt.png";
+import netlify from "../../public/assets/icons/netlify.webp";
+import figma from "../../public/assets/icons/figma.png";
+import devtools from "../../public/assets/icons/devTools.png";
+import mongoDb from "../../public/assets/icons/mongodb.png";
+import firebase from "../../public/assets/icons/firebase.png";
+import vercel from "../../public/assets/icons/vercel.svg";
+import vscode from "../../public/assets/icons/vscode.png";
+import mongoose from "../../public/assets/icons/mongoose.svg";
+import typescript from "../../public/assets/icons/typescript.svg";
+import nextJs from "../../public/assets/icons/nextjs.svg";
+import redux from "../../public/assets/icons/redux.svg";
 import cloudinary from "../../public/assets/icons/cloudinary.svg";
+import daisyUi from "../../public/assets/icons/daisyUI.png";
 
 export interface Project {
   id: string;
   title: string;
   description: string;
   images: string[];
+  githubFrontendLink: string;
+  githubBackendLink: string;
   frontend: { icon: any; label: string }[];
   backend: { icon: any; label: string }[];
 }
@@ -29,50 +42,36 @@ export const projects: Record<string, Project> = {
       "/assets/SecondHandMarketPlace/AboutUsPage.png",
       "/assets/SecondHandMarketPlace/AddProduct.png",
       "/assets/SecondHandMarketPlace/AllProducts.png",
+      "/assets/SecondHandMarketPlace/ContactPage.png",
+      "/assets/SecondHandMarketPlace/CheckOutPage.png",
+      "/assets/SecondHandMarketPlace/FAQPage.png",
+      "/assets/SecondHandMarketPlace/ManageAllProducts.png",
+      "/assets/SecondHandMarketPlace/ManageAllUser.png",
+      "/assets/SecondHandMarketPlace/PaymentPage.png",
+      "/assets/SecondHandMarketPlace/ProductDetails.png",
+      "/assets/SecondHandMarketPlace/ProfilePage.png",
+      "/assets/SecondHandMarketPlace/Purchases.png",
+      "/assets/SecondHandMarketPlace/Sales.png",
     ],
+    githubFrontendLink:
+      "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
+    githubBackendLink:
+      "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
     frontend: [
-      { icon: "/assets/icons/js.png", label: "JavaScript" },
-      { icon: "/assets/icons/typescript.svg", label: "Typescript" },
-      { icon: "/assets/icons/redux.svg", label: "Redux" },
-      { icon: "/assets/icons/nextjs.svg", label: "NextJs" },
-      { icon: "/assets/icons/tailwind.png", label: "Tailwind CSS" },
+      { icon: javascript, label: "JavaScript" },
+      { icon: typescript, label: "Typescript" },
+      { icon: redux, label: "Redux" },
+      { icon: nextJs, label: "NextJs" },
+      { icon: tailwind, label: "Tailwind CSS" },
     ],
     backend: [
-      { icon: "/assets/icons/typescript.svg", label: "Typescript" },
-      { icon: "/assets/icons/nodejs.png", label: "NodeJS" },
-      { icon: "/assets/icons/expressJs.png", label: "ExpressJS" },
-      { icon: "/assets/icons/mongoose.svg", label: "Mongoose" },
-      { icon: "/assets/icons/mongodb.png", label: "MongoDB" },
-      { icon: "/assets/icons/jwt.png", label: "JWT" },
-      { icon: "/assets/icons/cloudinary.svg", label: "Cloudinary" },
-    ],
-  },
-  SecondHandMarketPlace2: {
-    id: "SecondHandMarketPlace",
-    title: "SecondHand Marketplace",
-    description: "Amader desher na bangladesh",
-    images: [
-      "/assets/SecondHandMarketPlace/AboutUsPage.png",
-      "/assets/SecondHandMarketPlace/AddProduct.png",
-      "/assets/SecondHandMarketPlace/AllProducts.png",
-      "/assets/SecondHandMarketPlace/AllProducts.png",
-      "/assets/SecondHandMarketPlace/AllProducts.png",
-    ],
-    frontend: [
-      { icon: "/assets/icons/js.png", label: "JavaScript" },
-      { icon: "/assets/icons/typescript.svg", label: "Typescript" },
-      { icon: "/assets/icons/redux.svg", label: "Redux" },
-      { icon: "/assets/icons/nextjs.svg", label: "NextJs" },
-      { icon: "/assets/icons/tailwind.png", label: "Tailwind CSS" },
-    ],
-    backend: [
-      { icon: "/assets/icons/typescript.svg", label: "Typescript" },
-      { icon: "/assets/icons/nodejs.png", label: "NodeJS" },
-      { icon: "/assets/icons/expressJs.png", label: "ExpressJS" },
-      { icon: "/assets/icons/mongoose.svg", label: "Mongoose" },
-      { icon: "/assets/icons/mongodb.png", label: "MongoDB" },
-      { icon: "/assets/icons/jwt.png", label: "JWT" },
-      { icon: "/assets/icons/cloudinary.svg", label: "Cloudinary" },
+      { icon: typescript, label: "Typescript" },
+      { icon: nodejs, label: "NodeJS" },
+      { icon: expressjs, label: "ExpressJS" },
+      { icon: mongoose, label: "Mongoose" },
+      { icon: mongoDb, label: "MongoDB" },
+      { icon: jwt, label: "JWT" },
+      { icon: cloudinary, label: "Cloudinary" },
     ],
   },
 };

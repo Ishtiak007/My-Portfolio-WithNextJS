@@ -44,17 +44,17 @@ const EducationBG = () => {
   );
 
   return (
-    <div ref={containerRef} className="lg:p-7 bg-gray-900">
+    <div ref={containerRef} className="lg:p-7 bg-fuchsia-800/15">
       <div className="text-center py-8">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase edu-header">
-          Here's my educational background details
-        </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl edu-header">
+        <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Educational Background
         </p>
+        <h2 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+          Here's my educational background details
+        </h2>
       </div>
 
-      <div className="lg:flex gap-4">
+      <div className="lg:flex gap-4 ">
         {/* Education Section */}
         <div className="space-y-6 relative pl-5 border-l-2 border-gray-400 flex-1">
           <div className="text-center mb-6">
@@ -64,9 +64,9 @@ const EducationBG = () => {
           </div>
 
           {/* Box 1 */}
-          <div className="relative pl-5 edu-box">
-            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
-            <h4 className="text-teal-500 font-semibold">Batch 2017</h4>
+          <div className="relative pl-5 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
+            <h4 className="text-gray-300 font-semibold">Batch 2017</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
               Secondary School Degree (SSC)
             </h3>
@@ -79,9 +79,9 @@ const EducationBG = () => {
           </div>
 
           {/* Box 2 */}
-          <div className="relative pl-5 edu-box">
-            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
-            <h4 className="text-teal-500 font-semibold">2017 - 2019</h4>
+          <div className="relative pl-5 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
+            <h4 className="text-gray-300 font-semibold">2017 - 2019</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
               Higher School Degree (HSC)
             </h3>
@@ -94,9 +94,9 @@ const EducationBG = () => {
           </div>
 
           {/* Box 3 */}
-          <div className="relative pl-5 pb-0 edu-box">
-            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
-            <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
+          <div className="relative pl-5 pb-0 edu-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+            <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-gray-900"></span>
+            <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
               Bachelor Of Science Degree
             </h3>
@@ -163,9 +163,9 @@ const EducationBG = () => {
 
           <div className="space-y-6 relative pl-5 border-l-2 border-gray-400">
             {/* Box 1 */}
-            <div className="relative pl-5 dev-box">
-              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
-              <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
+            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
+              <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Real-Life Projects
               </h3>
@@ -178,37 +178,37 @@ const EducationBG = () => {
             </div>
 
             {/* Box 2 */}
-            <div className="relative pl-5 dev-box">
-              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
-              <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
+            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
+              <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Frontend Development
               </h3>
               <p className="text-[15px] text-gray-300">
                 Expertise in
-                <span className="text-green-400"> Typescript</span>,
-                <span className="text-green-400"> Javascript</span>,
-                <span className="text-green-400"> React JS</span>,
-                <span className="text-green-400"> Next JS</span>,
-                <span className="text-green-400"> Tailwind CSS</span>,
-                <span className="text-green-400"> Shadcn UI</span>, and{" "}
-                <span className="text-green-400"> Bootstrap</span>.
+                <span className="text-blue-300"> Typescript</span>,
+                <span className="text-blue-300"> Javascript</span>,
+                <span className="text-blue-300"> React JS</span>,
+                <span className="text-blue-300"> Next JS</span>,
+                <span className="text-blue-300"> Tailwind CSS</span>,
+                <span className="text-blue-300"> Shadcn UI</span>, and{" "}
+                <span className="text-blue-300"> Bootstrap</span>.
               </p>
             </div>
 
             {/* Box 3 */}
-            <div className="relative pl-5 dev-box">
-              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
-              <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
+            <div className="relative pl-5 dev-box bg-white/5 border-white/10 backdrop-blur-lg p-3">
+              <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-fuchsia-600 border-2 border-[#1e1e1e]"></span>
+              <h4 className="text-gray-300 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Backend Development
               </h3>
               <p className="text-[15px] text-gray-300">
                 Specializing in
-                <span className="text-green-400"> Typescript</span>,
-                <span className="text-green-400"> Node.js</span>,
-                <span className="text-green-400"> Express.js</span>,
-                <span className="text-green-400"> Mongoose</span>, with focus on
+                <span className="text-blue-300"> Typescript</span>,
+                <span className="text-blue-300"> Node.js</span>,
+                <span className="text-blue-300"> Express.js</span>,
+                <span className="text-blue-300"> Mongoose</span>, with focus on
                 scalable, RESTful APIs and secure integrations.
               </p>
             </div>

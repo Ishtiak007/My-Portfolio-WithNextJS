@@ -64,7 +64,7 @@ const ShreyuDashboard = () => {
   ];
   return (
     <div className="w-full max-w-3xl mx-auto mt-10 px-4">
-      <div className="overflow-hidden rounded-xl shadow-lg bg-[#173447]">
+      <div className="overflow-hidden rounded-xl shadow-lg bg-white/5 border-white/10 backdrop-blur-lg">
         {/* Image container */}
         <div className="w-full h-60 sm:h-64 md:h-72 lg:h-80 overflow-hidden group">
           <Image
@@ -139,7 +139,7 @@ const ShreyuDashboard = () => {
         id="my_modal_ShreyuDashboard"
         className="modal scrollbar-hidden rounded-md"
       >
-        <div className="bg-[#173447] modal-box w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl p-4 sm:px-4">
+        <div className="bg-white/5 border-white/10 backdrop-blur-lg modal-box w-full max-w-[95%] sm:max-w-3xl md:max-w-4xl lg:max-w-6xl p-4 sm:px-4">
           <div className="modal-action flex justify-end my-2">
             <form method="dialog">
               <button className="bg-white rounded-full p-2 sm:p-4 flex justify-center gap-2 items-center">

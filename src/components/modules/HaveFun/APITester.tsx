@@ -65,7 +65,7 @@ export default function APITester() {
         <button
           onClick={sendRequest}
           disabled={loading}
-          className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition disabled:opacity-50"
+          className="bg-fuchsia-600 text-white px-4 py-2 rounded-md hover:bg-fuchsia-700 transition disabled:opacity-50"
         >
           {loading ? "Sending..." : "Send"}
         </button>

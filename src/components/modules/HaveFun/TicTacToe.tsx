@@ -30,7 +30,7 @@ const TicTacToe = () => {
           <button
             key={index}
             onClick={() => handleClick(index)}
-            className="size-20 text-2xl font-bold text-teal-600 border border-gray-400 rounded-lg hover:bg-gray-100"
+            className="size-20 text-2xl font-bold text-fuchsia-600 border border-gray-400 rounded-lg hover:bg-gray-100"
           >
             {cell}
           </button>
@@ -49,7 +49,7 @@ const TicTacToe = () => {
 
       <button
         onClick={resetGame}
-        className="mt-4 px-4 py-2 bg-teal-600 text-white rounded-full hover:bg-teal-700 transition"
+        className="mt-4 px-4 py-2 bg-fuchsia-600 text-white rounded-full hover:bg-fuchsia-700 transition"
       >
         Restart Game
       </button>

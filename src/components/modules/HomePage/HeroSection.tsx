@@ -44,18 +44,18 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 bg-[#0f172a]">
-      <Spotlight
+    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+      {/* <Spotlight
         className="-top-40 middle-0 md:left-60 md:-top-20"
         fill="gray"
-      />
+      /> */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10 bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:6rem_4rem] h-full">
         <div className="p-4 relative z-10 text-left w-full lg:w-[60%]">
           <h1 className="mt-10 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500">
             I'm ISHTIAK AHMED
           </h1>
 
-          <div className="text-xl sm:text-lg md:text-xl font-bold text-left text-teal-400 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
+          <div className="text-xl sm:text-lg md:text-xl font-bold text-left text-gray-100 h-8 sm:h-12 md:h-10 overflow-hidden relative my-5">
             <div
               className={clsx(
                 "transition-all duration-300 ease-in-out absolute w-full",
@@ -77,7 +77,7 @@ function HeroSection() {
           <div className="mt-6 flex flex-col sm:flex-row flex-wrap items-center gap-4">
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="h-10 w-44 bg-fuchsia-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 className="flex items-center gap-2"
@@ -90,7 +90,7 @@ function HeroSection() {
 
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="h-10 w-44 bg-fuchsia-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 className="flex items-center gap-2"
@@ -103,7 +103,7 @@ function HeroSection() {
 
             <Button
               borderRadius="1.75rem"
-              className="bg-white h-10 w-44 dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="h-10 w-44 bg-fuchsia-950 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <a
                 href="https://wa.me/8801853196899"
@@ -133,7 +133,7 @@ function HeroSection() {
               href="https://github.com/Ishtiak007"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float"
             >
               <FaGithub />
             </Link>
@@ -141,42 +141,42 @@ function HeroSection() {
               href="https://www.linkedin.com/in/ishtiak-ahmed-2846722a5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-100"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-100"
             >
               <FaLinkedin />
             </Link>
             <Link
               href="mailto:ishtiakahmed18899@gmail.com"
               target="_blank"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-200"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-200"
             >
               <FaEnvelope />
             </Link>
             <Link
               href="https://www.facebook.com/ishtiakahmed01999"
               target="_blank"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-300"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-300"
             >
               <FaFacebook />
             </Link>
             <Link
               href="https://www.instagram.com/ishtiak_ahmed99/"
               target="_blank"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-400"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-400"
             >
               <FaInstagram />
             </Link>
             <Link
               href="https://x.com/Ishtiak02236404"
               target="_blank"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-500"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-500"
             >
               <FaTwitter />
             </Link>
             <Link
               href="https://www.pinterest.com/ishtiakahmed18899/"
               target="_blank"
-              className="text-white hover:text-teal-400 transition-colors text-2xl animate-float delay-600"
+              className="text-white hover:text-fuchsia-400 transition-colors text-2xl animate-float delay-600"
             >
               <FaPinterest />
             </Link>

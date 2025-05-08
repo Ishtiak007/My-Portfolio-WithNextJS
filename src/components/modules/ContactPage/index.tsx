@@ -56,41 +56,41 @@ function ContactMe() {
             type="email"
             name="from_email"
             placeholder="Your email address"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-fuchsia-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
             required
           />
           <input
             type="text"
             name="from_name"
             placeholder="Your Name"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-fuchsia-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
             required
           />
           <input
             type="text"
             name="from_subject"
             placeholder="Subject"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-fuchsia-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
             required
           />
           <input
             type="number"
             name="phoneNumber"
             placeholder="Number"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-fuchsia-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400"
             required
           />
           <textarea
             name="message"
             placeholder="Your message"
-            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400 resize-none"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-fuchsia-500 w-full p-4 bg-neutral-950 placeholder:text-gray-400 resize-none"
             rows={5}
             required
           ></textarea>
           <div className="flex justify-center">
             <Button
               type="submit"
-              className="px-6 py-2 rounded-lg bg-[#173447] text-white font-medium hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              className="px-6 py-2 rounded-lg bg-white/5 border-white/10 backdrop-blur-lg text-white font-medium hover:bg-fuchsia-900 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2"
             >
               Send Message
             </Button>

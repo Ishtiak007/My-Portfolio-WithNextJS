@@ -85,7 +85,7 @@ export function CompleteProjectOverview() {
   ];
   return (
     <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
-      <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-gray-400 md:text-4xl dark:text-neutral-800">
+      <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-gray-400 md:text-4xl ">
         I have completed over 20 full-stack projects, including both frontend
         and backend development.
       </p>
@@ -94,11 +94,11 @@ export function CompleteProjectOverview() {
           <Image
             src={item.image}
             alt={item.title}
-            className="pointer-events-none relative z-10  object-cover"
+            className="pointer-events-none relative z-10 object-cover"
             width={800} // Set a proper width
             height={600} // Set a proper height
           />
-          <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+          <h3 className="mt-4 text-center text-2xl font-bold text-black/60 bg-white">
             {item.title}
           </h3>
         </DraggableCardBody>

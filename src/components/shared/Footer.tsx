@@ -29,7 +29,7 @@ function Footer() {
       });
   };
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12">
+    <footer className="bg-fuchsia-800/15 text-gray-300 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">About Me</h2>
@@ -87,28 +87,28 @@ function Footer() {
                 href="https://www.linkedin.com/in/ishtiak-ahmed-2846722a5/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-teal-400 transition-colors text-2xl "
+                className="text-white hover:text-fuchsia-400 transition-colors text-2xl "
               >
                 <FaLinkedin />
               </Link>
               <Link
                 href="https://www.facebook.com/ishtiakahmed01999"
                 target="_blank"
-                className="text-white hover:text-teal-400 transition-colors text-2xl"
+                className="text-white hover:text-fuchsia-400 transition-colors text-2xl"
               >
                 <FaFacebook />
               </Link>
               <Link
                 href="https://www.instagram.com/ishtiak_ahmed99/"
                 target="_blank"
-                className="text-white hover:text-teal-400 transition-colors text-2xl"
+                className="text-white hover:text-fuchsia-400 transition-colors text-2xl"
               >
                 <FaInstagram />
               </Link>
               <Link
                 href="https://x.com/Ishtiak02236404"
                 target="_blank"
-                className="text-white hover:text-teal-400 transition-colors text-2xl"
+                className="text-white hover:text-fuchsia-400 transition-colors text-2xl"
               >
                 <FaTwitter />
               </Link>

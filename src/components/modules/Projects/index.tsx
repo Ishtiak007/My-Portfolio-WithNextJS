@@ -39,34 +39,34 @@ const Projects = () => {
     activeTab === "fullstack" ? fullStackProjects : frontEndProjects;
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-white/5 border-white/10 backdrop-blur-lg">
       <div className="text-center py-8">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+        <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Here are some projects with Forrentend and Fullstack.
-        </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-          My Projects
         </p>
+        <h2 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+          My Projects
+        </h2>
       </div>
       <div className="max-w-screen-xl mx-auto">
         {/* Tabs */}
         <div className="flex justify-center mb-6">
           <button
             onClick={() => setActiveTab("fullstack")}
-            className={`px-4 py-2 font-semibold rounded-l-full border transition-all duration-300 ease-in-out transform ${
+            className={`px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
               activeTab === "fullstack"
-                ? "bg-teal-800 text-white scale-105 shadow-md"
-                : "bg-gray-100 text-gray-800 hover:bg-teal-100"
+                ? "bg-fuchsia-800 text-white scale-105 shadow-md"
+                : "bg-gray-100 text-gray-800 hover:bg-fuchsia-100"
             }`}
           >
             Full Stack
           </button>
           <button
             onClick={() => setActiveTab("frontend")}
-            className={`px-4 py-2 font-semibold rounded-r-full border transition-all duration-300 ease-in-out transform ${
+            className={`px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
               activeTab === "frontend"
-                ? "bg-teal-800 text-white scale-105 shadow-md"
-                : "bg-gray-100 text-gray-800 hover:bg-teal-100"
+                ? "bg-fuchsia-800 text-white scale-105 shadow-md"
+                : "bg-gray-100 text-gray-800 hover:bg-fuchsia-100"
             }`}
           >
             Frontend

@@ -5,8 +5,8 @@ export default function BlogListPage() {
   const blogs = getAllBlogs();
 
   return (
-    <div className="min-h-screen bg-[#173447] py-12 px-6 md:px-20">
-      <h1 className="text-4xl font-bold text-center text-teal-500 mt-16">
+    <div className="min-h-screen bg-white/5 border-white/10 backdrop-blur-lg py-12 px-6 md:px-20">
+      <h1 className="text-4xl font-bold text-center text-fuchsia-500 mt-16">
         My Blog Posts
       </h1>
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 place-items-center">

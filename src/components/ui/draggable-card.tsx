@@ -163,7 +163,7 @@ export const DraggableCardBody = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900",
+        "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-500/10 p-6 shadow-2xl transform-3d",
         className
       )}
     >
@@ -186,14 +186,14 @@ export const DraggableCardContainer = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div className="bg-[#173447]">
+    <div>
       <div className="text-center py-8">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+        <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           20 + Complete Projects
-        </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-          Catch and have a look
         </p>
+        <h2 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+          Catch and have a look
+        </h2>
       </div>
 
       <div className={cn("[perspective:3000px]", className)}>{children}</div>

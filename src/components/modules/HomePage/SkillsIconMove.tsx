@@ -28,14 +28,14 @@ import github from "../../../../public/assets/icons/github.svg";
 
 function SkillsIcons() {
   return (
-    <div className="min-h-screen w-full bg-gray-900 dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden p-5">
-      <div className="text-center">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+    <div className="min-h-screen w-full dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden p-5">
+      <div className="text-center py-8">
+        <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Technologies & Tools
-        </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-          Skills
         </p>
+        <h2 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center">
+          Skills
+        </h2>
       </div>
       <div className="px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-screen-xl mx-auto">
@@ -94,16 +94,16 @@ function SkillsIcons() {
           ].map((section, idx) => (
             <div
               key={idx}
-              className="bg-gray-900 rounded-xl shadow-2xl p-4 sm:p-5"
+              className="bg-fuchsia-700/15 rounded-xl shadow-2xl p-4 sm:p-5"
             >
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-pink-400 text-center mb-6 text-xl sm:text-2xl font-bold">
+              <h1 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center my-12">
                 {section.title}
               </h1>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {section.items.map((item, i) => (
                   <div
                     key={i}
-                    className="flex flex-col items-center p-3 bg-gray-800 rounded-xl shadow hover:scale-105 duration-300 animate-float"
+                    className="flex flex-col items-center p-3 bg-white/5 border-white/10 backdrop-blur-lg rounded-xl shadow hover:scale-105 duration-300 animate-float"
                   >
                     {item.icon ? (
                       item.icon

@@ -46,7 +46,7 @@ export function BlogCard3D({
 
         <div className="mt-6 text-right">
           <CardItem translateZ={20} as={Link} href={link}>
-            <button className="py-2 px-4 bg-teal-500 text-white text-sm rounded-md hover:bg-teal-600 transition">
+            <button className="py-2 px-4 bg-fuchsia-500 text-white text-sm rounded-md hover:bg-fuchsia-600 transition">
               Read More →
             </button>
           </CardItem>
