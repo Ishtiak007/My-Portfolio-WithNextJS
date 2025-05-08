@@ -60,12 +60,12 @@ const Projects = () => {
       </div>
       <div className="max-w-screen-xl mx-auto">
         {/* Tabs */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 p-3 bg-white/5 border-white/10 backdrop-blur-lg">
           <button
             onClick={() => setActiveTab("fullstack")}
-            className={`px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
+            className={`rounded-sm px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
               activeTab === "fullstack"
-                ? "bg-fuchsia-800 text-white scale-105 shadow-md"
+                ? "bg-fuchsia-700 text-white scale-105 shadow-md"
                 : "bg-gray-100 text-gray-800 hover:bg-fuchsia-100"
             }`}
           >
@@ -73,9 +73,9 @@ const Projects = () => {
           </button>
           <button
             onClick={() => setActiveTab("frontend")}
-            className={`px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
+            className={`rounded-sm px-4 py-2 font-semibold  border transition-all duration-300 ease-in-out transform ${
               activeTab === "frontend"
-                ? "bg-fuchsia-800 text-white scale-105 shadow-md"
+                ? "bg-fuchsia-700 text-white scale-105 shadow-md"
                 : "bg-gray-100 text-gray-800 hover:bg-fuchsia-100"
             }`}
           >
@@ -91,7 +91,7 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5"
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
             {currentProjects}
           </motion.div>
