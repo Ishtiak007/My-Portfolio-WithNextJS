@@ -67,6 +67,14 @@ function Footer() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                href="/404"
+                className="hover:text-white transition-colors duration-300"
+              >
+                404
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -118,7 +126,7 @@ function Footer() {
             <FaCopy className="text-white cursor-pointer" />{" "}
             ishtiakahmed18899@gmail.com{" "}
           </h1>
-          <p>Phone: +880 1853-19689</p>
+          <p>Whatsapp: +8801521-742729</p>
         </div>
       </div>
       <p className="text-center text-xs pt-8">

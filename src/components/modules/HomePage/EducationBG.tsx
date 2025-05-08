@@ -1,27 +1,70 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
 
 const EducationBG = () => {
+  const containerRef = useRef(null);
+
+  useGSAP(
+    () => {
+      const ctx = gsap.context(() => {
+        gsap.from(".edu-header", {
+          opacity: 0,
+          y: -30,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.2,
+        });
+
+        gsap.from(".edu-box", {
+          opacity: 0,
+          x: -30,
+          duration: 1,
+          stagger: 0.3,
+          ease: "power2.out",
+          delay: 0.5,
+        });
+
+        gsap.from(".dev-box", {
+          opacity: 0,
+          x: 30,
+          duration: 1,
+          stagger: 0.3,
+          ease: "power2.out",
+          delay: 1,
+        });
+      }, containerRef);
+      return () => ctx.revert();
+    },
+    { scope: containerRef }
+  );
+
   return (
-    <div className="lg:p-7 bg-gray-900">
+    <div ref={containerRef} className="lg:p-7 bg-gray-900">
       <div className="text-center py-8">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase edu-header">
           Here's my educational background details
         </h2>
-        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl edu-header">
           Educational Background
         </p>
       </div>
 
-      <div className="lg:flex gap-4 ">
+      <div className="lg:flex gap-4">
+        {/* Education Section */}
         <div className="space-y-6 relative pl-5 border-l-2 border-gray-400 flex-1">
           <div className="text-center mb-6">
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-white edu-header">
               Education Details
             </h3>
           </div>
+
           {/* Box 1 */}
-          <div className="relative pl-5">
+          <div className="relative pl-5 edu-box">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">Batch 2017</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -32,11 +75,11 @@ const EducationBG = () => {
             </p>
             <p className="text-[15px] text-gray-300">SSC: 5.00 (A+)</p>
             <p className="text-[15px] text-gray-300">Passing Year: 2017</p>
-            <p className="text-[15px] text-gray-300">Background : Science</p>
+            <p className="text-[15px] text-gray-300">Background: Science</p>
           </div>
 
           {/* Box 2 */}
-          <div className="relative pl-5">
+          <div className="relative pl-5 edu-box">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2017 - 2019</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -47,11 +90,11 @@ const EducationBG = () => {
             </p>
             <p className="text-[15px] text-gray-300">HSC: 5.00 (A+)</p>
             <p className="text-[15px] text-gray-300">Passing Year: 2019</p>
-            <p className="text-[15px] text-gray-300">Background : Science</p>
+            <p className="text-[15px] text-gray-300">Background: Science</p>
           </div>
 
           {/* Box 3 */}
-          <div className="relative pl-5 pb-0">
+          <div className="relative pl-5 pb-0 edu-box">
             <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-gray-900"></span>
             <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
             <h3 className="text-[20px] py-2 text-gray-300">
@@ -64,63 +107,63 @@ const EducationBG = () => {
               Rangpur Engineering College, Affiliated by University of Rajshahi
             </p>
 
-            {/* Notable Courses Section */}
             <div className="mt-4">
               <h4 className="text-gray-300 text-[20px] mb-2">
                 Notable Courses:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 text-[14px] text-gray-300">
                 <ul className="space-y-1">
-                  <li>CSE1111- Introduction to Computer Systems </li>
+                  <li>CSE1111 - Introduction to Computer Systems</li>
                   <li>
-                    CSE1112- Computer Maintenance and Engineering Drawing Lab{" "}
+                    CSE1112 - Computer Maintenance and Engineering Drawing Lab
                   </li>
-                  <li>CSE1121- Structural Programming Language </li>
-                  <li>CSE1122- Structural Programming Language Lab.</li>
-                  <li>PHY1211- Basic Electricity and Electrical Circuits </li>
-                  <li>CSE1211- Introduction to Digital Electronics</li>
-                  <li>CSE1221- Object Oriented Programming </li>
-                  <li>CSE1222- Object Oriented Programming Lab </li>
-                  <li>STAT2111- Theory of Statistics </li>
-                  <li>MATH2131- Differential Equations and Optimization</li>
-                  <li>CSE2111- Digital System Design</li>
-                  <li>CSE2121- Data Structure </li>
-                  <li>CSE2131- Discrete Mathematics </li>
-                  <li>CSE2142- Writing Professional Code Lab </li>
+                  <li>CSE1121 - Structural Programming Language</li>
+                  <li>CSE1122 - Structural Programming Language Lab</li>
+                  <li>PHY1211 - Basic Electricity and Electrical Circuits</li>
+                  <li>CSE1211 - Introduction to Digital Electronics</li>
+                  <li>CSE1221 - Object Oriented Programming</li>
+                  <li>CSE1222 - Object Oriented Programming Lab</li>
+                  <li>STAT2111 - Theory of Statistics</li>
+                  <li>MATH2131 - Differential Equations and Optimization</li>
+                  <li>CSE2111 - Digital System Design</li>
+                  <li>CSE2121 - Data Structure</li>
+                  <li>CSE2131 - Discrete Mathematics</li>
+                  <li>CSE2142 - Writing Professional Code Lab</li>
                 </ul>
                 <ul className="space-y-1">
-                  <li>LAW2211- Cyber and Intellectual Property Law </li>
-                  <li>MATH2231- Numerical Methods </li>
-                  <li>MATH2241- Linear Algebra </li>
-                  <li>CSE2211- Theory of Computation</li>
-                  <li>CSE2221- Design and Analysis of Algorithms</li>
-                  <li>CSE2231- Computer Architecture and Organization </li>
-                  <li>ICE3161- Communication Engineering</li>
-                  <li>CSE3162- Mobile Application Development</li>
+                  <li>LAW2211 - Cyber and Intellectual Property Law</li>
+                  <li>MATH2231 - Numerical Methods</li>
+                  <li>MATH2241 - Linear Algebra</li>
+                  <li>CSE2211 - Theory of Computation</li>
+                  <li>CSE2221 - Design and Analysis of Algorithms</li>
+                  <li>CSE2231 - Computer Architecture and Organization</li>
+                  <li>ICE3161 - Communication Engineering</li>
+                  <li>CSE3162 - Mobile Application Development</li>
                   <li>
-                    CSE3151- Engineering Ethics and Environment Protection{" "}
+                    CSE3151 - Engineering Ethics and Environment Protection
                   </li>
-                  <li>CSE3141- Compiler Design</li>
-                  <li>CSE3111- Software Engineering</li>
-                  <li>CSE3121- Database Management Systems </li>
-                  <li>CSE3131- Web Engineering</li>
-                  <li>CSE2252- Web Application Development Lab </li>
+                  <li>CSE3141 - Compiler Design</li>
+                  <li>CSE3111 - Software Engineering</li>
+                  <li>CSE3121 - Database Management Systems</li>
+                  <li>CSE3131 - Web Engineering</li>
+                  <li>CSE2252 - Web Application Development Lab</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Development Experience */}
         <div className="space-y-6 relative pl-5 border-gray-400 flex-1">
           <div className="text-center mb-6">
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-white edu-header">
               Development Experience
             </h3>
           </div>
 
           <div className="space-y-6 relative pl-5 border-l-2 border-gray-400">
             {/* Box 1 */}
-            <div className="relative pl-5">
+            <div className="relative pl-5 dev-box">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
@@ -130,54 +173,43 @@ const EducationBG = () => {
                 Full Stack MERN developer skilled in building robust, scalable
                 web applications. I seamlessly integrate front-end design with
                 efficient back-end logic, ensuring responsive UI, secure APIs,
-                and dynamic user experiences. Passionate about delivering
-                impactful, real-world solutions through clean and maintainable
-                code.
+                and dynamic user experiences.
               </p>
             </div>
 
             {/* Box 2 */}
-            <div className="relative pl-5">
+            <div className="relative pl-5 dev-box">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Frontend Development
               </h3>
               <p className="text-[15px] text-gray-300">
-                As a Full Stack MERN Developer, my front-end expertise lies in
+                Expertise in
                 <span className="text-green-400"> Typescript</span>,
                 <span className="text-green-400"> Javascript</span>,
                 <span className="text-green-400"> React JS</span>,
                 <span className="text-green-400"> Next JS</span>,
                 <span className="text-green-400"> Tailwind CSS</span>,
-                <span className="text-green-400">
-                  {" "}
-                  Shadcn UI, Aceternity UI
-                </span>
-                ,<span className="text-green-400"> Bootstrap</span>{" "}
-                (occasionally) I build responsive, clean, and interactive
-                interfaces focused on performance and excellent user experience.
+                <span className="text-green-400"> Shadcn UI</span>, and{" "}
+                <span className="text-green-400"> Bootstrap</span>.
               </p>
             </div>
 
             {/* Box 3 */}
-            <div className="relative pl-5 pb-0">
+            <div className="relative pl-5 dev-box">
               <span className="absolute -left-[13px] top-0 w-[13px] h-[23px] rounded-md bg-teal-500 border-2 border-[#1e1e1e]"></span>
               <h4 className="text-teal-500 font-semibold">2022 - (Present)</h4>
               <h3 className="text-[20px] py-2 text-gray-300">
                 Backend Development
               </h3>
               <p className="text-[15px] text-gray-300">
-                As a Full Stack MERN Developer, I specialize in back-end
-                development using
+                Specializing in
                 <span className="text-green-400"> Typescript</span>,
                 <span className="text-green-400"> Node.js</span>,
                 <span className="text-green-400"> Express.js</span>,
-                <span className="text-green-400"> Mongoose</span>. I design and
-                implement RESTful APIs, integrate databases, and ensure smooth,
-                secure server-side functionality. I'm committed to creating
-                efficient, scalable systems that seamlessly connect the
-                front-end with the back-end.
+                <span className="text-green-400"> Mongoose</span>, with focus on
+                scalable, RESTful APIs and secure integrations.
               </p>
             </div>
           </div>

@@ -44,14 +44,12 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 bg-gray-900">
-      {/* Left-side social links */}
+    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 bg-[#0f172a]">
       <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
+        className="-top-40 middle-0 md:left-60 md:-top-20"
+        fill="gray"
       />
-
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10 bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:6rem_4rem] h-full">
         <div className="p-4 relative z-10 text-left w-full lg:w-[60%]">
           <h1 className="mt-10 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500">
             I'm ISHTIAK AHMED
