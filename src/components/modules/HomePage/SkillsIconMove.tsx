@@ -38,7 +38,7 @@ function SkillsIcons() {
     });
   }, []);
   return (
-    <div className="min-h-screen w-full dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden p-5">
+    <div className="min-h-screen w-full bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden p-5">
       <div data-aos="fade-up" className="text-center py-8">
         <p className="text-base text-white font-semibold tracking-wide uppercase text-center">
           Technologies & Tools
@@ -104,7 +104,7 @@ function SkillsIcons() {
           ].map((section, idx) => (
             <div
               key={idx}
-              className="bg-fuchsia-700/15 rounded-xl shadow-2xl p-4 sm:p-5"
+              className="bg-fuchsia-800/5 rounded-xl shadow-2xl p-4 sm:p-5"
             >
               <h1 className="mt-2 text-2xl leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-center my-12">
                 {section.title}
