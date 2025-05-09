@@ -98,7 +98,7 @@ const PetAdoption = () => {
           <div className="my-4">
             <div className="flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-0">
               <button
-                onClick={() => router.push(`/projectDetails/FoodFestival`)}
+                onClick={() => router.push(`/projectDetails/PetAdoption`)}
                 className="px-6 py-2 text-white font-semibold bg-gradient-to-bl from-violet-500 to-fuchsia-500 hover:brightness-110 transition duration-300 flex items-center gap-3"
               >
                 Details <CgDetailsMore />

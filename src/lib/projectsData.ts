@@ -29,6 +29,10 @@ export interface Project {
   images: string[];
   githubFrontendLink: string;
   githubBackendLink: string;
+  finishDate: string;
+  features: string[];
+  futurePlan: string[];
+  challengesAndSolutions: string;
   frontend: { icon: any; label: string }[];
   backend: { icon: any; label: string }[];
 }
@@ -57,6 +61,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "April 2025",
     frontend: [
       { icon: javascript, label: "JavaScript" },
       { icon: typescript, label: "Typescript" },
@@ -96,6 +101,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "November 2023",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -135,6 +141,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "November 2023",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -174,6 +181,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "March 2024",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -206,6 +214,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "June 2024",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -245,6 +254,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "August 2024",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -279,6 +289,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "November 2023",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },
@@ -308,6 +319,7 @@ export const projects: Record<string, Project> = {
       "https://github.com/Ishtiak007/SecondHandMarketplace-Client?tab=readme-ov-file",
     githubBackendLink:
       "https://github.com/Ishtiak007/SecondHandMarketplace-Server",
+    finishDate: "January 2025",
     frontend: [
       { icon: css, label: "CSS" },
       { icon: javascript, label: "JavaScript" },

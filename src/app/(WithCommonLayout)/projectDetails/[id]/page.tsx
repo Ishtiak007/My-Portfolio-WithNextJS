@@ -120,7 +120,7 @@ export default function ProjectDetailPage({
                   <h2 className="leading-8 tracking-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  text-left text-base">
                     Finish date
                   </h2>
-                  <p className="text-gray-300">May 2025</p>
+                  <p className="text-gray-300">{project.finishDate}</p>
                 </div>
               </div>
             </div>

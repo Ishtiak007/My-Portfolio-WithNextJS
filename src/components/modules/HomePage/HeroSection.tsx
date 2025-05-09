@@ -9,6 +9,7 @@ import Image from "next/image";
 import bannerImage from "../../../../public/assets/BannerImage.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "motion/react";
 
 import {
   FaGithub,
@@ -22,6 +23,90 @@ import {
   FaPinterest,
   FaFileDownload,
 } from "react-icons/fa";
+
+const techIcons = [
+  {
+    name: "React",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    alt: "React icon",
+    position: "top-0 left-[171px] md:top-20 md:left-[40%]",
+    animation: {
+      rotate: 360,
+      transition: { duration: 8, repeat: Infinity, ease: "linear" },
+    },
+  },
+  {
+    name: "TypeScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    alt: "TypeScript icon",
+    position: "top-[140px] left-[7px] md:top-64 md:left-[30%] lg:left-[10%]",
+    animation: {
+      y: [0, -10, 0],
+      transition: { duration: 3, repeat: Infinity },
+    },
+  },
+  {
+    name: "Next.js",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    alt: "Next.js icon",
+    position: "top-70 left-[270px] md:top-70 md:left-[56%]",
+    animation: {
+      scale: [1, 1.3, 1],
+      transition: { duration: 4, repeat: Infinity },
+    },
+  },
+  {
+    name: "Tailwind",
+    src: "https://www.svgrepo.com/show/374118/tailwind.svg",
+    alt: "Tailwind CSS icon",
+    position: "top-64 left-[40px] md:top-[400px] md:left-[40%]",
+    animation: {
+      opacity: [1, 0, 1],
+      transition: { duration: 5, repeat: Infinity },
+    },
+  },
+  {
+    name: "Node.js",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    alt: "Node.js icon",
+    position: "top-20 left-[250px] md:top-40 md:left-[85%]",
+    animation: {
+      rotate: [0, 15, -15, 0],
+      transition: { duration: 6, repeat: Infinity },
+    },
+  },
+  {
+    name: "Git",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    alt: "Git icon",
+    position: "top-[200px] left-[250px] md:top-[70%] md:left-[85%]",
+    animation: {
+      y: [0, 5, 0],
+      transition: { duration: 4, repeat: Infinity },
+    },
+    responsive: "hidden md:flex",
+  },
+  {
+    name: "JavaScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    alt: "JavaScript icon",
+    position: "top-[100px] left-[100px] md:top-[500px] md:left-[20%]",
+    animation: {
+      scale: [1, 1.2, 1],
+      transition: { duration: 5, repeat: Infinity },
+    },
+  },
+  {
+    name: "GraphQL",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    alt: "GraphQL icon",
+    position: "top-[180px] left-[150px] md:top-[500px] md:left-[60%]",
+    animation: {
+      scale: [1, 1.1, 1],
+      transition: { duration: 4, repeat: Infinity },
+    },
+  },
+];
 
 const phrases = [
   "Full Stack Developer",
@@ -59,6 +144,7 @@ function HeroSection() {
         className="-top-40 middle-0 md:left-60 md:-top-20"
         fill="gray"
       /> */}
+
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full px-4 md:px-10 bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:6rem_4rem] h-full">
         <div
           data-aos="fade-right"
@@ -129,6 +215,19 @@ function HeroSection() {
             </Button>
           </div>
         </div>
+
+        {techIcons.map((icon) => (
+          <motion.div
+            key={icon.name}
+            className={`circle-icon absolute animate-float ${icon.position} ${
+              icon.responsive || ""
+            }`}
+            animate={icon.animation}
+            whileHover={{ scale: 1.3 }}
+          >
+            <Image width={23} height={23} src={icon.src} alt={icon.alt} />
+          </motion.div>
+        ))}
 
         <div
           data-aos="fade-left"
